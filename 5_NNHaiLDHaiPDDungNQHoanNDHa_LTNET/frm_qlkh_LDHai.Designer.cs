@@ -110,6 +110,7 @@
             // 
             // dgv_qlkh_LDHai
             // 
+            this.dgv_qlkh_LDHai.AllowUserToAddRows = false;
             this.dgv_qlkh_LDHai.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_qlkh_LDHai.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dgv_qlkh_LDHai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -118,7 +119,6 @@
             this.dgv_qlkh_LDHai.Size = new System.Drawing.Size(877, 179);
             this.dgv_qlkh_LDHai.TabIndex = 6;
             this.dgv_qlkh_LDHai.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_qlkh_LDHai_CellClick);
-            this.dgv_qlkh_LDHai.AllowUserToAddRows = false;
             // 
             // txt_mkh_LDHai
             // 
@@ -126,7 +126,6 @@
             this.txt_mkh_LDHai.Name = "txt_mkh_LDHai";
             this.txt_mkh_LDHai.Size = new System.Drawing.Size(236, 20);
             this.txt_mkh_LDHai.TabIndex = 7;
-            
             // 
             // txt_tkh_LDHai
             // 
@@ -231,6 +230,7 @@
             this.Name = "frm_qlkh_LDHai";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form Quản Lý Khách Hàng Lê Đức Hải";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frm_qlkh_LDHai_FormClosed);
             this.Load += new System.EventHandler(this.frm_qlkh_LDHai_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_qlkh_LDHai)).EndInit();
             this.ResumeLayout(false);

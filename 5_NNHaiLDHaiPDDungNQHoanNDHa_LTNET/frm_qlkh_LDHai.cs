@@ -148,5 +148,10 @@ namespace QLBHTH_PhanDinhDung
             {
             }
         }
+
+        private void frm_qlkh_LDHai_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
