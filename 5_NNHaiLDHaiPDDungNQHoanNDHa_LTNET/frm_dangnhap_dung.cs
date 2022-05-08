@@ -30,6 +30,9 @@ namespace QLBHTH_PhanDinhDung
                     bool role = (bool)q.Quyen;
                     Program.role = role;
                     MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButtons.OK);
+                    Hide();
+                    frm_giaodienchinh_ha frm_Giaodienchinh_Ha = new frm_giaodienchinh_ha();
+                    frm_Giaodienchinh_Ha.ShowDialog();
                 }
                 else
                 {

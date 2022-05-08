@@ -53,6 +53,18 @@
     <Compile Include="frm_dangnhap_dung.Designer.cs">
       <DependentUpon>frm_dangnhap_dung.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_giaodienchinh_ha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_giaodienchinh_ha.Designer.cs">
+      <DependentUpon>frm_giaodienchinh_ha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gttv_ha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gttv_ha.Designer.cs">
+      <DependentUpon>frm_gttv_ha.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="qlbh_dung.designer.cs">
@@ -62,6 +74,12 @@
     </Compile>
     <EmbeddedResource Include="frm_dangnhap_dung.resx">
       <DependentUpon>frm_dangnhap_dung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_giaodienchinh_ha.resx">
+      <DependentUpon>frm_giaodienchinh_ha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gttv_ha.resx">
+      <DependentUpon>frm_gttv_ha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -51,7 +51,7 @@ namespace QLBHTH_PhanDinhDung
     #endregion
 		
 		public qlbh_dungDataContext() : 
-				base(global::QLBHTH_PhanDinhDung.Properties.Settings.Default.QLBH_PhanDinhDungConnectionString1, mappingSource)
+				base(global::QLBHTH_PhanDinhDung.Properties.Settings.Default.QLBH_PhanDinhDungConnectionString2, mappingSource)
 		{
 			OnCreated();
 		}
