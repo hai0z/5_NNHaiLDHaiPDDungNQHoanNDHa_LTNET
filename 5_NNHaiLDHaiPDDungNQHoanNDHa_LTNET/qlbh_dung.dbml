@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLBH_PhanDinhDung" Class="qlbh_dungDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-HJU8SD1\SQLEXPRESS;Initial Catalog=QLBH_PhanDinhDung;Integrated Security=True" SettingsObjectName="QLBHTH_PhanDinhDung.Properties.Settings" SettingsPropertyName="QLBH_PhanDinhDungConnectionString2" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-CUA-HAI\SQLEXPRESS;Initial Catalog=QLBH_PhanDinhDung;Integrated Security=True" SettingsObjectName="QLBHTH_PhanDinhDung.Properties.Settings" SettingsPropertyName="QLBH_PhanDinhDungConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.CT_Hoadon" Member="CT_Hoadons">
     <Type Name="CT_Hoadon">
       <Column Name="SoHD" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -21,6 +21,16 @@
       <Association Name="Loaihang_Hanghoa" Member="Loaihang1" ThisKey="Loaihang" OtherKey="Maloai" Type="Loaihang" IsForeignKey="true" />
     </Type>
   </Table>
+  <Table Name="dbo.Khachhang" Member="Khachhangs">
+    <Type Name="Khachhang">
+      <Column Name="MaKH" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenKH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Diachi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Quan" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ThanhPho" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="Khachhang_Hoadon" Member="Hoadons" ThisKey="MaKH" OtherKey="MaKH" Type="Hoadon" />
+    </Type>
+  </Table>
   <Table Name="dbo.Hoadon" Member="Hoadons">
     <Type Name="Hoadon">
       <Column Name="SoHD" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -30,16 +40,6 @@
       <Association Name="Hoadon_CT_Hoadon" Member="CT_Hoadons" ThisKey="SoHD" OtherKey="SoHD" Type="CT_Hoadon" />
       <Association Name="Khachhang_Hoadon" Member="Khachhang" ThisKey="MaKH" OtherKey="MaKH" Type="Khachhang" IsForeignKey="true" />
       <Association Name="Nhanvien_Hoadon" Member="Nhanvien" ThisKey="MaNV" OtherKey="MaNV" Type="Nhanvien" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.Khachhang" Member="Khachhangs">
-    <Type Name="Khachhang">
-      <Column Name="MaKH" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="TenKH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="Diachi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="Quan" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="ThanhPho" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Association Name="Khachhang_Hoadon" Member="Hoadons" ThisKey="MaKH" OtherKey="MaKH" Type="Hoadon" />
     </Type>
   </Table>
   <Table Name="dbo.Loaihang" Member="Loaihangs">

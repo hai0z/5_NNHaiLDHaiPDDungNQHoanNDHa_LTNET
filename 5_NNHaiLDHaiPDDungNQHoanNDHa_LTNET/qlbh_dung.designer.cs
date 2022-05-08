@@ -36,12 +36,12 @@ namespace QLBHTH_PhanDinhDung
     partial void InsertHanghoa(Hanghoa instance);
     partial void UpdateHanghoa(Hanghoa instance);
     partial void DeleteHanghoa(Hanghoa instance);
-    partial void InsertHoadon(Hoadon instance);
-    partial void UpdateHoadon(Hoadon instance);
-    partial void DeleteHoadon(Hoadon instance);
     partial void InsertKhachhang(Khachhang instance);
     partial void UpdateKhachhang(Khachhang instance);
     partial void DeleteKhachhang(Khachhang instance);
+    partial void InsertHoadon(Hoadon instance);
+    partial void UpdateHoadon(Hoadon instance);
+    partial void DeleteHoadon(Hoadon instance);
     partial void InsertLoaihang(Loaihang instance);
     partial void UpdateLoaihang(Loaihang instance);
     partial void DeleteLoaihang(Loaihang instance);
@@ -51,7 +51,7 @@ namespace QLBHTH_PhanDinhDung
     #endregion
 		
 		public qlbh_dungDataContext() : 
-				base(global::QLBHTH_PhanDinhDung.Properties.Settings.Default.QLBH_PhanDinhDungConnectionString2, mappingSource)
+				base(global::QLBHTH_PhanDinhDung.Properties.Settings.Default.QLBH_PhanDinhDungConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
@@ -96,19 +96,19 @@ namespace QLBHTH_PhanDinhDung
 			}
 		}
 		
-		public System.Data.Linq.Table<Hoadon> Hoadons
-		{
-			get
-			{
-				return this.GetTable<Hoadon>();
-			}
-		}
-		
 		public System.Data.Linq.Table<Khachhang> Khachhangs
 		{
 			get
 			{
 				return this.GetTable<Khachhang>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Hoadon> Hoadons
+		{
+			get
+			{
+				return this.GetTable<Hoadon>();
 			}
 		}
 		
@@ -572,6 +572,192 @@ namespace QLBHTH_PhanDinhDung
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Khachhang")]
+	public partial class Khachhang : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _MaKH;
+		
+		private string _TenKH;
+		
+		private string _Diachi;
+		
+		private string _Quan;
+		
+		private string _ThanhPho;
+		
+		private EntitySet<Hoadon> _Hoadons;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnMaKHChanging(int value);
+    partial void OnMaKHChanged();
+    partial void OnTenKHChanging(string value);
+    partial void OnTenKHChanged();
+    partial void OnDiachiChanging(string value);
+    partial void OnDiachiChanged();
+    partial void OnQuanChanging(string value);
+    partial void OnQuanChanged();
+    partial void OnThanhPhoChanging(string value);
+    partial void OnThanhPhoChanged();
+    #endregion
+		
+		public Khachhang()
+		{
+			this._Hoadons = new EntitySet<Hoadon>(new Action<Hoadon>(this.attach_Hoadons), new Action<Hoadon>(this.detach_Hoadons));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaKH", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int MaKH
+		{
+			get
+			{
+				return this._MaKH;
+			}
+			set
+			{
+				if ((this._MaKH != value))
+				{
+					this.OnMaKHChanging(value);
+					this.SendPropertyChanging();
+					this._MaKH = value;
+					this.SendPropertyChanged("MaKH");
+					this.OnMaKHChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenKH", DbType="NVarChar(50)")]
+		public string TenKH
+		{
+			get
+			{
+				return this._TenKH;
+			}
+			set
+			{
+				if ((this._TenKH != value))
+				{
+					this.OnTenKHChanging(value);
+					this.SendPropertyChanging();
+					this._TenKH = value;
+					this.SendPropertyChanged("TenKH");
+					this.OnTenKHChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Diachi", DbType="NVarChar(100)")]
+		public string Diachi
+		{
+			get
+			{
+				return this._Diachi;
+			}
+			set
+			{
+				if ((this._Diachi != value))
+				{
+					this.OnDiachiChanging(value);
+					this.SendPropertyChanging();
+					this._Diachi = value;
+					this.SendPropertyChanged("Diachi");
+					this.OnDiachiChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Quan", DbType="NVarChar(100)")]
+		public string Quan
+		{
+			get
+			{
+				return this._Quan;
+			}
+			set
+			{
+				if ((this._Quan != value))
+				{
+					this.OnQuanChanging(value);
+					this.SendPropertyChanging();
+					this._Quan = value;
+					this.SendPropertyChanged("Quan");
+					this.OnQuanChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ThanhPho", DbType="NVarChar(100)")]
+		public string ThanhPho
+		{
+			get
+			{
+				return this._ThanhPho;
+			}
+			set
+			{
+				if ((this._ThanhPho != value))
+				{
+					this.OnThanhPhoChanging(value);
+					this.SendPropertyChanging();
+					this._ThanhPho = value;
+					this.SendPropertyChanged("ThanhPho");
+					this.OnThanhPhoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Khachhang_Hoadon", Storage="_Hoadons", ThisKey="MaKH", OtherKey="MaKH")]
+		public EntitySet<Hoadon> Hoadons
+		{
+			get
+			{
+				return this._Hoadons;
+			}
+			set
+			{
+				this._Hoadons.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_Hoadons(Hoadon entity)
+		{
+			this.SendPropertyChanging();
+			entity.Khachhang = this;
+		}
+		
+		private void detach_Hoadons(Hoadon entity)
+		{
+			this.SendPropertyChanging();
+			entity.Khachhang = null;
+		}
+	}
+	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Hoadon")]
 	public partial class Hoadon : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -813,192 +999,6 @@ namespace QLBHTH_PhanDinhDung
 		{
 			this.SendPropertyChanging();
 			entity.Hoadon = null;
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Khachhang")]
-	public partial class Khachhang : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _MaKH;
-		
-		private string _TenKH;
-		
-		private string _Diachi;
-		
-		private string _Quan;
-		
-		private string _ThanhPho;
-		
-		private EntitySet<Hoadon> _Hoadons;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnMaKHChanging(int value);
-    partial void OnMaKHChanged();
-    partial void OnTenKHChanging(string value);
-    partial void OnTenKHChanged();
-    partial void OnDiachiChanging(string value);
-    partial void OnDiachiChanged();
-    partial void OnQuanChanging(string value);
-    partial void OnQuanChanged();
-    partial void OnThanhPhoChanging(string value);
-    partial void OnThanhPhoChanged();
-    #endregion
-		
-		public Khachhang()
-		{
-			this._Hoadons = new EntitySet<Hoadon>(new Action<Hoadon>(this.attach_Hoadons), new Action<Hoadon>(this.detach_Hoadons));
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaKH", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int MaKH
-		{
-			get
-			{
-				return this._MaKH;
-			}
-			set
-			{
-				if ((this._MaKH != value))
-				{
-					this.OnMaKHChanging(value);
-					this.SendPropertyChanging();
-					this._MaKH = value;
-					this.SendPropertyChanged("MaKH");
-					this.OnMaKHChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenKH", DbType="NVarChar(50)")]
-		public string TenKH
-		{
-			get
-			{
-				return this._TenKH;
-			}
-			set
-			{
-				if ((this._TenKH != value))
-				{
-					this.OnTenKHChanging(value);
-					this.SendPropertyChanging();
-					this._TenKH = value;
-					this.SendPropertyChanged("TenKH");
-					this.OnTenKHChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Diachi", DbType="NVarChar(100)")]
-		public string Diachi
-		{
-			get
-			{
-				return this._Diachi;
-			}
-			set
-			{
-				if ((this._Diachi != value))
-				{
-					this.OnDiachiChanging(value);
-					this.SendPropertyChanging();
-					this._Diachi = value;
-					this.SendPropertyChanged("Diachi");
-					this.OnDiachiChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Quan", DbType="NVarChar(100)")]
-		public string Quan
-		{
-			get
-			{
-				return this._Quan;
-			}
-			set
-			{
-				if ((this._Quan != value))
-				{
-					this.OnQuanChanging(value);
-					this.SendPropertyChanging();
-					this._Quan = value;
-					this.SendPropertyChanged("Quan");
-					this.OnQuanChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ThanhPho", DbType="NVarChar(100)")]
-		public string ThanhPho
-		{
-			get
-			{
-				return this._ThanhPho;
-			}
-			set
-			{
-				if ((this._ThanhPho != value))
-				{
-					this.OnThanhPhoChanging(value);
-					this.SendPropertyChanging();
-					this._ThanhPho = value;
-					this.SendPropertyChanged("ThanhPho");
-					this.OnThanhPhoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Khachhang_Hoadon", Storage="_Hoadons", ThisKey="MaKH", OtherKey="MaKH")]
-		public EntitySet<Hoadon> Hoadons
-		{
-			get
-			{
-				return this._Hoadons;
-			}
-			set
-			{
-				this._Hoadons.Assign(value);
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-		
-		private void attach_Hoadons(Hoadon entity)
-		{
-			this.SendPropertyChanging();
-			entity.Khachhang = this;
-		}
-		
-		private void detach_Hoadons(Hoadon entity)
-		{
-			this.SendPropertyChanging();
-			entity.Khachhang = null;
 		}
 	}
 	
