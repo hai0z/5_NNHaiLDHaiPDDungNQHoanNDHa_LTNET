@@ -22,13 +22,13 @@ namespace QLBHTH_PhanDinhDung
             try
             {
                 qlbh_dungDataContext dangnhap = new qlbh_dungDataContext();
-                int mnv = int.Parse(txt_mnv_dung.Text.ToString());
+                string mnv = txt_mnv_dung.Text.ToString();
                 string password = txt_pass_dung.Text;
                 var q = dangnhap.Nhanviens.Select(p => new { p.MaNV, p.Matkhau, p.Quyen }).Where(p => p.MaNV == mnv && p.Matkhau == password).SingleOrDefault();
                 if (q != null)
                 {
                     bool role = (bool)q.Quyen;
-                    int maNhanVien = q.MaNV;
+                    string maNhanVien = q.MaNV;
                     Program.role = role;
                     Program.mnv = maNhanVien;
                     Hide();

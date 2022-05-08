@@ -51,5 +51,12 @@ namespace QLBHTH_PhanDinhDung
             frm_dangnhap_dung dangnhap = new frm_dangnhap_dung();
             dangnhap.ShowDialog();
         }
+
+        private void btn_qlkhachhang_ha_Click(object sender, EventArgs e)
+        {
+            frm_qlkh_LDHai qlkh = new frm_qlkh_LDHai();
+            this.Hide();
+            qlkh.ShowDialog();
+        }
     }
 }
