@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLBH_PhanDinhDung" Class="qlbh_dungDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-CUA-HAI\SQLEXPRESS;Initial Catalog=QLBH_PhanDinhDung;Integrated Security=True" SettingsObjectName="QLBHTH_PhanDinhDung.Properties.Settings" SettingsPropertyName="QLBH_PhanDinhDungConnectionString1" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=NGOQUANGHOAN;Initial Catalog=QLBH_PhanDinhDung;Integrated Security=True" SettingsObjectName="QLBHTH_PhanDinhDung.Properties.Settings" SettingsPropertyName="QLBH_PhanDinhDungConnectionString4" Provider="System.Data.SqlClient" />
   <Table Name="dbo.CT_Hoadon" Member="CT_Hoadons">
     <Type Name="CT_Hoadon">
       <Column Name="SoHD" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
