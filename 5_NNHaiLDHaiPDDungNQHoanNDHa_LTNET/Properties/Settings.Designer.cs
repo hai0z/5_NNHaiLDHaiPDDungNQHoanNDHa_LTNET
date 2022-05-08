@@ -12,7 +12,7 @@ namespace QLBHTH_PhanDinhDung.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.0.3.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.1.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -53,6 +53,17 @@ namespace QLBHTH_PhanDinhDung.Properties {
         public string QLBH_PhanDinhDungConnectionString2 {
             get {
                 return ((string)(this["QLBH_PhanDinhDungConnectionString2"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=ALOHA\\OMUJI;Initial Catalog=QLBH_PhanDinhDung;Integrated Security=Tru" +
+            "e")]
+        public string QLBH_PhanDinhDungConnectionString3 {
+            get {
+                return ((string)(this["QLBH_PhanDinhDungConnectionString3"]));
             }
         }
     }

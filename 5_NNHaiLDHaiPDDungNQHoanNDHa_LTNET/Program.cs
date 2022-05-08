@@ -13,12 +13,12 @@ namespace QLBHTH_PhanDinhDung
         /// </summary>
 
         public static bool role;
-        public static int mnv;
+        public static string mnv;
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_dangnhap_dung());
+            Application.Run(new frm_giaodienchinh_ha());
         }
     }
 }
