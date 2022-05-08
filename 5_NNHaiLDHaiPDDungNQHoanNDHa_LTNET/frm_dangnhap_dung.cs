@@ -37,13 +37,29 @@ namespace QLBHTH_PhanDinhDung
                 }
                 else
                 {
-                    MessageBox.Show("Sai mã nhân viên hoặc mật khẩu", "Lỗi");
+                    if (mnv.Trim() == "" || password.Trim() == "")
+                    {
+                        lb_error_dung.Visible = true;
+                        lb_error_dung.Text = "Vui lòng nhập đầy đủ thông tin";
+                        txt_mnv_dung.Focus();
+                        var t = new Timer();
+                        t.Interval = 2000; 
+                        t.Tick += (a,b) =>
+                        {
+                            lb_error_dung.Visible = false;
+                            t.Stop();
+                        };
+                        t.Start();
+                    }
+                    else { 
+                        MessageBox.Show("Sai mã nhân viên hoặc mật khẩu", "Lỗi");
+
+                    }
                 }
             }
             catch (Exception)
             {
-                lb_error_dung.Visible = true;
-                lb_error_dung.Text = "Vui lòng nhập đầy đủ thông tin";
+               
             }
 
 

@@ -47,9 +47,16 @@ namespace QLBHTH_PhanDinhDung
 
         private void btn_dangxuat_ha_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            frm_dangnhap_dung dangnhap = new frm_dangnhap_dung();
-            dangnhap.ShowDialog();
+            //confirm logout
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn đăng xuất?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                Program.mnv = "";
+                Program.role = false;
+                this.Hide();
+                frm_dangnhap_dung dangnhap = new frm_dangnhap_dung();
+                dangnhap.ShowDialog();
+            }
         }
 
         private void btn_qlkhachhang_ha_Click(object sender, EventArgs e)
