@@ -105,17 +105,18 @@
     <Compile Include="frm_qlloaihang_hoan.Designer.cs">
       <DependentUpon>frm_qlloaihang_hoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_qlnv_hai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_qlnv_hai.Designer.cs">
+      <DependentUpon>frm_qlnv_hai.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="qlbh_dung.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>qlbh_dung.dbml</DependentUpon>
-    </Compile>
-    <Compile Include="QLBH_PhanDinhDungDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QLBH_PhanDinhDungDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="frm_dangnhap_dung.resx">
@@ -135,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_qlloaihang_hoan.resx">
       <DependentUpon>frm_qlloaihang_hoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_qlnv_hai.resx">
+      <DependentUpon>frm_qlnv_hai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -162,17 +166,6 @@
     </None>
     <None Include="qlbh_dung.dbml.layout">
       <DependentUpon>qlbh_dung.dbml</DependentUpon>
-    </None>
-    <None Include="QLBH_PhanDinhDungDataSet.xsc">
-      <DependentUpon>QLBH_PhanDinhDungDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="QLBH_PhanDinhDungDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QLBH_PhanDinhDungDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="QLBH_PhanDinhDungDataSet.xss">
-      <DependentUpon>QLBH_PhanDinhDungDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

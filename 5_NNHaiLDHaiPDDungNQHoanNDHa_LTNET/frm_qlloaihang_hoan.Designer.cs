@@ -179,6 +179,7 @@
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frm_qlloaihang_hoan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form Quản Lý Loại Hàng Hoàn";
             this.Load += new System.EventHandler(this.frm_qlloaihang_hoan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_loaihang_hoan)).EndInit();

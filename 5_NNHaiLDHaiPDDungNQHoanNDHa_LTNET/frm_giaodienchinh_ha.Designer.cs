@@ -61,12 +61,13 @@
             this.btn_qlnhanvien_ha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_qlnhanvien_ha.ForeColor = System.Drawing.Color.ForestGreen;
             this.btn_qlnhanvien_ha.Location = new System.Drawing.Point(51, 147);
-            this.btn_qlnhanvien_ha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_qlnhanvien_ha.Margin = new System.Windows.Forms.Padding(2);
             this.btn_qlnhanvien_ha.Name = "btn_qlnhanvien_ha";
             this.btn_qlnhanvien_ha.Size = new System.Drawing.Size(171, 31);
             this.btn_qlnhanvien_ha.TabIndex = 1;
             this.btn_qlnhanvien_ha.Text = "Quản Lý Nhân Viên";
             this.btn_qlnhanvien_ha.UseVisualStyleBackColor = false;
+            this.btn_qlnhanvien_ha.Click += new System.EventHandler(this.btn_qlnhanvien_ha_Click);
             // 
             // btn_qlmathang_ha
             // 
@@ -74,7 +75,7 @@
             this.btn_qlmathang_ha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_qlmathang_ha.ForeColor = System.Drawing.Color.Red;
             this.btn_qlmathang_ha.Location = new System.Drawing.Point(51, 206);
-            this.btn_qlmathang_ha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_qlmathang_ha.Margin = new System.Windows.Forms.Padding(2);
             this.btn_qlmathang_ha.Name = "btn_qlmathang_ha";
             this.btn_qlmathang_ha.Size = new System.Drawing.Size(171, 31);
             this.btn_qlmathang_ha.TabIndex = 2;
@@ -88,7 +89,7 @@
             this.btn_qlloaihang_ha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_qlloaihang_ha.ForeColor = System.Drawing.Color.DodgerBlue;
             this.btn_qlloaihang_ha.Location = new System.Drawing.Point(51, 266);
-            this.btn_qlloaihang_ha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_qlloaihang_ha.Margin = new System.Windows.Forms.Padding(2);
             this.btn_qlloaihang_ha.Name = "btn_qlloaihang_ha";
             this.btn_qlloaihang_ha.Size = new System.Drawing.Size(171, 31);
             this.btn_qlloaihang_ha.TabIndex = 3;
@@ -102,7 +103,7 @@
             this.btn_qldoanhthu_ha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_qldoanhthu_ha.ForeColor = System.Drawing.Color.Coral;
             this.btn_qldoanhthu_ha.Location = new System.Drawing.Point(51, 325);
-            this.btn_qldoanhthu_ha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_qldoanhthu_ha.Margin = new System.Windows.Forms.Padding(2);
             this.btn_qldoanhthu_ha.Name = "btn_qldoanhthu_ha";
             this.btn_qldoanhthu_ha.Size = new System.Drawing.Size(171, 31);
             this.btn_qldoanhthu_ha.TabIndex = 6;
@@ -115,7 +116,7 @@
             this.btn_qlkhachhang_ha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_qlkhachhang_ha.ForeColor = System.Drawing.Color.DarkMagenta;
             this.btn_qlkhachhang_ha.Location = new System.Drawing.Point(51, 384);
-            this.btn_qlkhachhang_ha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_qlkhachhang_ha.Margin = new System.Windows.Forms.Padding(2);
             this.btn_qlkhachhang_ha.Name = "btn_qlkhachhang_ha";
             this.btn_qlkhachhang_ha.Size = new System.Drawing.Size(171, 31);
             this.btn_qlkhachhang_ha.TabIndex = 5;
@@ -129,7 +130,7 @@
             this.btn_muahang_ha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_muahang_ha.ForeColor = System.Drawing.Color.SlateBlue;
             this.btn_muahang_ha.Location = new System.Drawing.Point(245, 147);
-            this.btn_muahang_ha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_muahang_ha.Margin = new System.Windows.Forms.Padding(2);
             this.btn_muahang_ha.Name = "btn_muahang_ha";
             this.btn_muahang_ha.Size = new System.Drawing.Size(171, 31);
             this.btn_muahang_ha.TabIndex = 4;
@@ -140,7 +141,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(420, 84);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(646, 491);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -152,7 +153,7 @@
             this.btn_gttv_ha.BackColor = System.Drawing.Color.Moccasin;
             this.btn_gttv_ha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_gttv_ha.Location = new System.Drawing.Point(1010, 586);
-            this.btn_gttv_ha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_gttv_ha.Margin = new System.Windows.Forms.Padding(2);
             this.btn_gttv_ha.Name = "btn_gttv_ha";
             this.btn_gttv_ha.Size = new System.Drawing.Size(56, 27);
             this.btn_gttv_ha.TabIndex = 4;
@@ -164,7 +165,7 @@
             // 
             this.btn_dangxuat_ha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_dangxuat_ha.Location = new System.Drawing.Point(924, 586);
-            this.btn_dangxuat_ha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_dangxuat_ha.Margin = new System.Windows.Forms.Padding(2);
             this.btn_dangxuat_ha.Name = "btn_dangxuat_ha";
             this.btn_dangxuat_ha.Size = new System.Drawing.Size(68, 27);
             this.btn_dangxuat_ha.TabIndex = 8;
@@ -200,7 +201,7 @@
             this.Controls.Add(this.btn_qlmathang_ha);
             this.Controls.Add(this.btn_qlnhanvien_ha);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frm_giaodienchinh_ha";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form Giao diện chính Duy Hà";

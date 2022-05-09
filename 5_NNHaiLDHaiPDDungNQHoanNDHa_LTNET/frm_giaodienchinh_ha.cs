@@ -79,5 +79,12 @@ namespace QLBHTH_PhanDinhDung
             this.Hide();
             qlhh.ShowDialog();
         }
+
+        private void btn_qlnhanvien_ha_Click(object sender, EventArgs e)
+        {
+            frm_qlnv_hai qlnv = new frm_qlnv_hai();
+            Hide();
+            qlnv.ShowDialog();
+        }
     }
 }
