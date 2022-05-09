@@ -45,6 +45,11 @@
             this.btn_xoa_LDHai = new System.Windows.Forms.Button();
             this.btn_sua_LDHai = new System.Windows.Forms.Button();
             this.btn_them_LDHai = new System.Windows.Forms.Button();
+            this.Mahang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tenhang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DVT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DG = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_qlhh_LDHai)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,7 +65,14 @@
             // 
             // dgv_qlhh_LDHai
             // 
+            this.dgv_qlhh_LDHai.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_qlhh_LDHai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_qlhh_LDHai.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Mahang,
+            this.Tenhang,
+            this.TenLoai,
+            this.DVT,
+            this.DG});
             this.dgv_qlhh_LDHai.Location = new System.Drawing.Point(12, 288);
             this.dgv_qlhh_LDHai.Name = "dgv_qlhh_LDHai";
             this.dgv_qlhh_LDHai.Size = new System.Drawing.Size(892, 221);
@@ -203,6 +215,36 @@
             this.btn_them_LDHai.UseVisualStyleBackColor = true;
             this.btn_them_LDHai.Click += new System.EventHandler(this.btn_them_LDHai_Click);
             // 
+            // Mahang
+            // 
+            this.Mahang.DataPropertyName = "Mahang";
+            this.Mahang.HeaderText = "Mã hàng";
+            this.Mahang.Name = "Mahang";
+            // 
+            // Tenhang
+            // 
+            this.Tenhang.DataPropertyName = "Tenhang";
+            this.Tenhang.HeaderText = "Tên Hàng";
+            this.Tenhang.Name = "Tenhang";
+            // 
+            // TenLoai
+            // 
+            this.TenLoai.DataPropertyName = "TenLoai";
+            this.TenLoai.HeaderText = "Tên loại hàng";
+            this.TenLoai.Name = "TenLoai";
+            // 
+            // DVT
+            // 
+            this.DVT.DataPropertyName = "DVT";
+            this.DVT.HeaderText = "Đơn vị tính";
+            this.DVT.Name = "DVT";
+            // 
+            // DG
+            // 
+            this.DG.DataPropertyName = "Dongia";
+            this.DG.HeaderText = "Đơn giá";
+            this.DG.Name = "DG";
+            // 
             // frm_qlhh_LDHai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -226,6 +268,7 @@
             this.Controls.Add(this.dgv_qlhh_LDHai);
             this.Controls.Add(this.label1);
             this.Name = "frm_qlhh_LDHai";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form quản lý hàng hoá Lê Đức Hải";
             this.Load += new System.EventHandler(this.frm_qlhh_LDHai_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_qlhh_LDHai)).EndInit();
@@ -253,5 +296,10 @@
         private System.Windows.Forms.Button btn_xoa_LDHai;
         private System.Windows.Forms.Button btn_sua_LDHai;
         private System.Windows.Forms.Button btn_them_LDHai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Mahang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tenhang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenLoai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DVT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DG;
     }
 }
