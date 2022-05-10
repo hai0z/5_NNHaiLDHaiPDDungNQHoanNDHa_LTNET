@@ -46,7 +46,7 @@
             this.lb_mnv_dung.Name = "lb_mnv_dung";
             this.lb_mnv_dung.Size = new System.Drawing.Size(103, 20);
             this.lb_mnv_dung.TabIndex = 0;
-            this.lb_mnv_dung.Text = "Mã nhân viên";
+            this.lb_mnv_dung.Text = "Hải đẹp trai";
             // 
             // lb_mk_dung
             // 
