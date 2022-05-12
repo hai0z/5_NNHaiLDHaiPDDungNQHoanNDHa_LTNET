@@ -51,9 +51,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(404, 22);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(321, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 13);
+            this.label1.Size = new System.Drawing.Size(306, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "QUẢN LÝ NHÂN VIÊN";
             // 
@@ -61,14 +62,14 @@
             // 
             this.txt_mnv_hai.Location = new System.Drawing.Point(233, 89);
             this.txt_mnv_hai.Name = "txt_mnv_hai";
-            this.txt_mnv_hai.Size = new System.Drawing.Size(125, 20);
+            this.txt_mnv_hai.Size = new System.Drawing.Size(201, 20);
             this.txt_mnv_hai.TabIndex = 1;
             // 
             // txt_mk_hai
             // 
-            this.txt_mk_hai.Location = new System.Drawing.Point(517, 92);
+            this.txt_mk_hai.Location = new System.Drawing.Point(594, 92);
             this.txt_mk_hai.Name = "txt_mk_hai";
-            this.txt_mk_hai.Size = new System.Drawing.Size(165, 20);
+            this.txt_mk_hai.Size = new System.Drawing.Size(241, 20);
             this.txt_mk_hai.TabIndex = 2;
             // 
             // btn_sua_hai
@@ -97,14 +98,14 @@
             // 
             this.txt_dc_hai.Location = new System.Drawing.Point(233, 194);
             this.txt_dc_hai.Name = "txt_dc_hai";
-            this.txt_dc_hai.Size = new System.Drawing.Size(125, 20);
+            this.txt_dc_hai.Size = new System.Drawing.Size(201, 20);
             this.txt_dc_hai.TabIndex = 2;
             // 
             // txt_tennv_hai
             // 
             this.txt_tennv_hai.Location = new System.Drawing.Point(233, 141);
             this.txt_tennv_hai.Name = "txt_tennv_hai";
-            this.txt_tennv_hai.Size = new System.Drawing.Size(125, 20);
+            this.txt_tennv_hai.Size = new System.Drawing.Size(201, 20);
             this.txt_tennv_hai.TabIndex = 1;
             // 
             // label2
@@ -137,7 +138,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(446, 99);
+            this.label5.Location = new System.Drawing.Point(508, 95);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 13);
             this.label5.TabIndex = 5;
@@ -146,7 +147,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(446, 151);
+            this.label6.Location = new System.Drawing.Point(508, 151);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(38, 13);
             this.label6.TabIndex = 5;
@@ -198,9 +199,9 @@
             this.cb_quyen_hai.Items.AddRange(new object[] {
             "Nhân viên",
             "Quản  lý"});
-            this.cb_quyen_hai.Location = new System.Drawing.Point(517, 148);
+            this.cb_quyen_hai.Location = new System.Drawing.Point(594, 148);
             this.cb_quyen_hai.Name = "cb_quyen_hai";
-            this.cb_quyen_hai.Size = new System.Drawing.Size(165, 21);
+            this.cb_quyen_hai.Size = new System.Drawing.Size(241, 21);
             this.cb_quyen_hai.TabIndex = 6;
             this.cb_quyen_hai.SelectedIndexChanged += new System.EventHandler(this.cb_quyen_hai_SelectedIndexChanged);
             // 

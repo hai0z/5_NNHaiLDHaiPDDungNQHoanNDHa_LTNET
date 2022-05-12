@@ -136,6 +136,7 @@
             this.btn_muahang_ha.TabIndex = 4;
             this.btn_muahang_ha.Text = "Mua Hàng";
             this.btn_muahang_ha.UseVisualStyleBackColor = true;
+            this.btn_muahang_ha.Click += new System.EventHandler(this.btn_muahang_ha_Click);
             // 
             // pictureBox1
             // 
