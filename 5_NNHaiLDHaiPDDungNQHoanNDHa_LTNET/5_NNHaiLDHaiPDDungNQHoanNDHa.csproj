@@ -110,6 +110,12 @@
     <Compile Include="frm_qlloaihang_hoan.Designer.cs">
       <DependentUpon>frm_qlloaihang_hoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_qlmuahang_LDHai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_qlmuahang_LDHai.Designer.cs">
+      <DependentUpon>frm_qlmuahang_LDHai.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_qlnv_hai.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_qlloaihang_hoan.resx">
       <DependentUpon>frm_qlloaihang_hoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_qlmuahang_LDHai.resx">
+      <DependentUpon>frm_qlmuahang_LDHai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_qlnv_hai.resx">
       <DependentUpon>frm_qlnv_hai.cs</DependentUpon>

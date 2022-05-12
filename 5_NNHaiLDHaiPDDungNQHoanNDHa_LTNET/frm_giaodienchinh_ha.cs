@@ -86,5 +86,12 @@ namespace QLBHTH_PhanDinhDung
             Hide();
             qlnv.ShowDialog();
         }
+
+        private void btn_muahang_ha_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frm_qlmuahang_LDHai muahang = new frm_qlmuahang_LDHai();
+            muahang.ShowDialog();
+        }
     }
 }
