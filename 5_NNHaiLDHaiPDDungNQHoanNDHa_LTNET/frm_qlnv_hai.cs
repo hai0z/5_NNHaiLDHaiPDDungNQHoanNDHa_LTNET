@@ -156,5 +156,7 @@ namespace QLBHTH_PhanDinhDung
             frm_giaodienchinh_ha gdc = new frm_giaodienchinh_ha();
             gdc.ShowDialog();
         }
+
+
     }
 }
