@@ -18,7 +18,7 @@ namespace QLBHTH_PhanDinhDung
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new report());
+            Application.Run(new frm_dangnhap_dung());
         }
     }
 }
