@@ -292,6 +292,7 @@
             this.btn_lhd_LDHai.TabIndex = 8;
             this.btn_lhd_LDHai.Text = "Lập hoá đơn";
             this.btn_lhd_LDHai.UseVisualStyleBackColor = true;
+            this.btn_lhd_LDHai.Click += new System.EventHandler(this.btn_lhd_LDHai_Click);
             // 
             // label12
             // 

@@ -24,6 +24,12 @@ namespace QLBHTH_PhanDinhDung
             qlbh_dungDataContext qlbh = new qlbh_dungDataContext();
             var dssp = qlbh.Hanghoas.Select(p => new { p.Mahang, p.Tenhang, p.DVT, p.Dongia});
             dgv_muahang_LDHai.DataSource = dssp;
+
+            qlbh_dungDataContext khachhang = new qlbh_dungDataContext();
+            var kh = khachhang.Khachhangs.Select(x => x);
+            cbx_tkh_LDHai.DataSource = kh;
+            cbx_tkh_LDHai.DisplayMember = "TenKH";
+            cbx_tkh_LDHai.ValueMember = "MaKH";
         }
         
         private void frm_qlmuahang_LDHai_Load(object sender, EventArgs e)
@@ -137,5 +143,42 @@ namespace QLBHTH_PhanDinhDung
                 txt_ttl_LDHai.Text = (int.Parse(txt_tkd_LDHai.Text) - int.Parse(txt_tt_LDHai.Text)).ToString();
             }
         }
+
+        private void btn_lhd_LDHai_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string mahoadon = txt_mhd_LDHai.Text;
+                string makhachhang = cbx_tkh_LDHai.SelectedValue.ToString();
+                DateTime ngaylap = DateTime.Now;
+                qlbh_dungDataContext qlbh = new qlbh_dungDataContext();
+                Hoadon hoadon = new Hoadon();
+                hoadon.Ngayban = ngaylap;
+                hoadon.SoHD = mahoadon;
+                hoadon.MaNV = Program.mnv;
+                hoadon.MaKH = makhachhang;
+                qlbh.Hoadons.InsertOnSubmit(hoadon);
+                qlbh.SubmitChanges();
+                for (int i = 0; i < dgv_giohang_LDHai.Rows.Count - 1; i++)
+                {
+                    CT_Hoadon cthoadon = new CT_Hoadon();
+                    cthoadon.SoHD = mahoadon;
+                    cthoadon.Mahang = dgv_giohang_LDHai.Rows[i].Cells[0].Value.ToString();
+                    cthoadon.Soluong = int.Parse(dgv_giohang_LDHai.Rows[i].Cells[2].Value.ToString());
+                    cthoadon.Dongiaban = int.Parse(dgv_giohang_LDHai.Rows[i].Cells[3].Value.ToString());
+                    qlbh.CT_Hoadons.InsertOnSubmit(cthoadon);
+                    qlbh.SubmitChanges();
+                }
+                MessageBox.Show("Lập hoá đơn thành công");
+                frm_hoadon_hai rp_hoadon = new frm_hoadon_hai(mahoadon);
+                Hide();
+                rp_hoadon.ShowDialog();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Lỗi");
+            }
+        }
     }
+  
 }

@@ -1,6 +1,6 @@
 ﻿namespace QLBHTH_PhanDinhDung
 {
-    partial class report
+    partial class frm_hoadon_hai
     {
         /// <summary>
         /// Required designer variable.
@@ -28,35 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.rpv_hoadon_hai = new Microsoft.Reporting.WinForms.ReportViewer();
             this.SuspendLayout();
             // 
-            // reportViewer1
+            // rpv_hoadon_hai
             // 
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "QLBHTH_PhanDinhDung.Report1.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(800, 450);
-            this.reportViewer1.TabIndex = 0;
-            this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
+            this.rpv_hoadon_hai.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rpv_hoadon_hai.Location = new System.Drawing.Point(0, 0);
+            this.rpv_hoadon_hai.Name = "rpv_hoadon_hai";
+            this.rpv_hoadon_hai.ServerReport.BearerToken = null;
+            this.rpv_hoadon_hai.Size = new System.Drawing.Size(1083, 589);
+            this.rpv_hoadon_hai.TabIndex = 0;
+            this.rpv_hoadon_hai.Load += new System.EventHandler(this.rpv_hoadon_hai_Load);
             // 
-            // report
+            // frm_hoadon_hai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.reportViewer1);
-            this.Name = "report";
-            this.Text = "report";
-            this.Load += new System.EventHandler(this.report_Load);
+            this.ClientSize = new System.Drawing.Size(1083, 589);
+            this.Controls.Add(this.rpv_hoadon_hai);
+            this.Name = "frm_hoadon_hai";
+            this.Text = "frm_hoadon_hai";
+            this.Load += new System.EventHandler(this.frm_hoadon_hai_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private Microsoft.Reporting.WinForms.ReportViewer rpv_hoadon_hai;
     }
 }

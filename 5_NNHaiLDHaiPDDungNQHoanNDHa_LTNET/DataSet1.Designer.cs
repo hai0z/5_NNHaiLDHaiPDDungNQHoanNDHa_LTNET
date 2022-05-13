@@ -293,6 +293,10 @@ namespace QLBHTH_PhanDinhDung {
             
             private global::System.Data.DataColumn columnSoluong;
             
+            private global::System.Data.DataColumn columnThanhtien;
+            
+            private global::System.Data.DataColumn columnDongiaban;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public hoadonDataTable() {
@@ -384,6 +388,22 @@ namespace QLBHTH_PhanDinhDung {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn ThanhtienColumn {
+                get {
+                    return this.columnThanhtien;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DongiabanColumn {
+                get {
+                    return this.columnDongiaban;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -419,7 +439,7 @@ namespace QLBHTH_PhanDinhDung {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public hoadonRow AddhoadonRow(string SoHD, string TenKH, string Ngayban, string TenNV, string Tenhang, string DVT, string Soluong) {
+            public hoadonRow AddhoadonRow(string SoHD, string TenKH, string Ngayban, string TenNV, string Tenhang, string DVT, string Soluong, string Thanhtien, string Dongiaban) {
                 hoadonRow rowhoadonRow = ((hoadonRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         SoHD,
@@ -428,7 +448,9 @@ namespace QLBHTH_PhanDinhDung {
                         TenNV,
                         Tenhang,
                         DVT,
-                        Soluong};
+                        Soluong,
+                        Thanhtien,
+                        Dongiaban};
                 rowhoadonRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowhoadonRow);
                 return rowhoadonRow;
@@ -458,6 +480,8 @@ namespace QLBHTH_PhanDinhDung {
                 this.columnTenhang = base.Columns["Tenhang"];
                 this.columnDVT = base.Columns["DVT"];
                 this.columnSoluong = base.Columns["Soluong"];
+                this.columnThanhtien = base.Columns["Thanhtien"];
+                this.columnDongiaban = base.Columns["Dongiaban"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -477,6 +501,10 @@ namespace QLBHTH_PhanDinhDung {
                 base.Columns.Add(this.columnDVT);
                 this.columnSoluong = new global::System.Data.DataColumn("Soluong", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSoluong);
+                this.columnThanhtien = new global::System.Data.DataColumn("Thanhtien", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnThanhtien);
+                this.columnDongiaban = new global::System.Data.DataColumn("Dongiaban", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDongiaban);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -731,6 +759,38 @@ namespace QLBHTH_PhanDinhDung {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Thanhtien {
+                get {
+                    try {
+                        return ((string)(this[this.tablehoadon.ThanhtienColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Thanhtien\' in table \'hoadon\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablehoadon.ThanhtienColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Dongiaban {
+                get {
+                    try {
+                        return ((string)(this[this.tablehoadon.DongiabanColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Dongiaban\' in table \'hoadon\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablehoadon.DongiabanColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsSoHDNull() {
                 return this.IsNull(this.tablehoadon.SoHDColumn);
             }
@@ -811,6 +871,30 @@ namespace QLBHTH_PhanDinhDung {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetSoluongNull() {
                 this[this.tablehoadon.SoluongColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsThanhtienNull() {
+                return this.IsNull(this.tablehoadon.ThanhtienColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetThanhtienNull() {
+                this[this.tablehoadon.ThanhtienColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDongiabanNull() {
+                return this.IsNull(this.tablehoadon.DongiabanColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDongiabanNull() {
+                this[this.tablehoadon.DongiabanColumn] = global::System.Convert.DBNull;
             }
         }
         

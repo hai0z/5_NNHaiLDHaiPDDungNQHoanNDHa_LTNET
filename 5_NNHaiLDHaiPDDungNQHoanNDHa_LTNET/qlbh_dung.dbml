@@ -1,15 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLBH_PhanDinhDung" Class="qlbh_dungDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=ALOHA\OMUJI;Initial Catalog=QLBH_PhanDinhDung;Integrated Security=True" SettingsObjectName="QLBHTH_PhanDinhDung.Properties.Settings" SettingsPropertyName="QLBH_PhanDinhDungConnectionString3" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.CT_Hoadon" Member="CT_Hoadons">
-    <Type Name="CT_Hoadon">
-      <Column Name="SoHD" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Mahang" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Soluong" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Dongiaban" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="Hanghoa_CT_Hoadon" Member="Hanghoa" ThisKey="Mahang" OtherKey="Mahang" Type="Hanghoa" IsForeignKey="true" />
-      <Association Name="Hoadon_CT_Hoadon" Member="Hoadon" ThisKey="SoHD" OtherKey="SoHD" Type="Hoadon" IsForeignKey="true" />
-    </Type>
-  </Table>
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-CUA-HAI\SQLEXPRESS;Initial Catalog=QLBH_PhanDinhDung;Integrated Security=True" SettingsObjectName="QLBHTH_PhanDinhDung.Properties.Settings" SettingsPropertyName="QLBH_PhanDinhDungConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Nhanvien" Member="Nhanviens">
     <Type Name="Nhanvien">
       <Column Name="MaNV" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -18,6 +8,16 @@
       <Column Name="Matkhau" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
       <Column Name="Quyen" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Association Name="Nhanvien_Hoadon" Member="Hoadons" ThisKey="MaNV" OtherKey="MaNV" Type="Hoadon" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CT_Hoadon" Member="CT_Hoadons">
+    <Type Name="CT_Hoadon">
+      <Column Name="SoHD" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Mahang" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Soluong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Dongiaban" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Hanghoa_CT_Hoadon" Member="Hanghoa" ThisKey="Mahang" OtherKey="Mahang" Type="Hanghoa" IsForeignKey="true" />
+      <Association Name="Hoadon_CT_Hoadon" Member="Hoadon" ThisKey="SoHD" OtherKey="SoHD" Type="Hoadon" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Hanghoa" Member="Hanghoas">
@@ -34,7 +34,7 @@
   <Table Name="dbo.Hoadon" Member="Hoadons">
     <Type Name="Hoadon">
       <Column Name="SoHD" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Ngayban" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Ngayban" Type="System.DateTime" DbType="Date" CanBeNull="true" />
       <Column Name="MaKH" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Column Name="MaNV" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Association Name="Hoadon_CT_Hoadon" Member="CT_Hoadons" ThisKey="SoHD" OtherKey="SoHD" Type="CT_Hoadon" />
