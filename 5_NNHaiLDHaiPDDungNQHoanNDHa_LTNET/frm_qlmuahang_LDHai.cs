@@ -67,6 +67,25 @@ namespace QLBHTH_PhanDinhDung
 
         private void btn_them_LDHai_Click(object sender, EventArgs e)
         {
+            if(txt_sl_LDHai.Text.Trim() == "")
+            {
+                MessageBox.Show("Chưa nhập số lượng");
+                return;
+            }
+            try
+            {
+                int soluong = int.Parse(txt_sl_LDHai.Text);
+                if (soluong <= 0)
+                {
+                    MessageBox.Show("Số lượng phải lớn hơn 0");
+                    return;
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Số lượng phải là số");
+                return;
+            }
             DataGridViewRow row = (DataGridViewRow)dgv_giohang_LDHai.Rows[0].Clone();
             int i = dgv_muahang_LDHai.CurrentRow.Index;
             row.Cells[0].Value = txt_msp_LDHai.Text;
@@ -104,8 +123,6 @@ namespace QLBHTH_PhanDinhDung
 
                 }
             }
-
-
             txt_sl_LDHai.Clear();
         }
 
@@ -172,7 +189,7 @@ namespace QLBHTH_PhanDinhDung
                 MessageBox.Show("Lập hoá đơn thành công");
                 frm_hoadon_hai rp_hoadon = new frm_hoadon_hai(mahoadon);
                 Hide();
-                rp_hoadon.ShowDialog();
+                rp_hoadon.Show();
             }
             catch (Exception)
             {

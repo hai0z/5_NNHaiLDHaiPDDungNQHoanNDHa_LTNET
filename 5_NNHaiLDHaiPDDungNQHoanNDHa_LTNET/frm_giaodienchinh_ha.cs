@@ -93,5 +93,27 @@ namespace QLBHTH_PhanDinhDung
             frm_qlmuahang_LDHai muahang = new frm_qlmuahang_LDHai();
             muahang.ShowDialog();
         }
+
+        private void btn_qldoanhthu_ha_Click(object sender, EventArgs e)
+        {
+            Hide();
+            frm_qldoanhthu_hai qldt = new frm_qldoanhthu_hai();
+            qldt.ShowDialog();
+        }
+
+        private void btn_baocao_hai_Click(object sender, EventArgs e)
+        {
+
+            Hide();
+            frm_baocao_hai baocao = new frm_baocao_hai();
+            baocao.ShowDialog();
+        }
+
+        private void btn_qlhd_hai_Click(object sender, EventArgs e)
+        {
+            Hide();
+            frm_qlhoadon_hai qlhd = new frm_qlhoadon_hai();
+            qlhd.ShowDialog();
+        }
     }
 }

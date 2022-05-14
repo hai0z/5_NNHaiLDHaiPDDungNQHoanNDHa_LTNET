@@ -45,6 +45,11 @@
             this.btn_quaylai_hai = new System.Windows.Forms.Button();
             this.btn_nhapLai_hai = new System.Windows.Forms.Button();
             this.cb_quyen_hai = new System.Windows.Forms.ComboBox();
+            this.mvn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tennv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mk = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quyen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_nv_hai)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,6 +92,12 @@
             this.dgv_nv_hai.AllowUserToAddRows = false;
             this.dgv_nv_hai.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_nv_hai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_nv_hai.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.mvn,
+            this.tennv,
+            this.dc,
+            this.mk,
+            this.quyen});
             this.dgv_nv_hai.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgv_nv_hai.Location = new System.Drawing.Point(0, 373);
             this.dgv_nv_hai.Name = "dgv_nv_hai";
@@ -205,6 +216,36 @@
             this.cb_quyen_hai.TabIndex = 6;
             this.cb_quyen_hai.SelectedIndexChanged += new System.EventHandler(this.cb_quyen_hai_SelectedIndexChanged);
             // 
+            // mvn
+            // 
+            this.mvn.DataPropertyName = "MaNV";
+            this.mvn.HeaderText = "Mã nhân viên";
+            this.mvn.Name = "mvn";
+            // 
+            // tennv
+            // 
+            this.tennv.DataPropertyName = "TenNV";
+            this.tennv.HeaderText = "Tên nhân viên";
+            this.tennv.Name = "tennv";
+            // 
+            // dc
+            // 
+            this.dc.DataPropertyName = "Diachi";
+            this.dc.HeaderText = "Địa chỉ";
+            this.dc.Name = "dc";
+            // 
+            // mk
+            // 
+            this.mk.DataPropertyName = "Matkhau";
+            this.mk.HeaderText = "Mật khẩu";
+            this.mk.Name = "mk";
+            // 
+            // quyen
+            // 
+            this.quyen.DataPropertyName = "Quyen";
+            this.quyen.HeaderText = "Quyền";
+            this.quyen.Name = "quyen";
+            // 
             // frm_qlnv_hai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -255,5 +296,10 @@
         private System.Windows.Forms.Button btn_quaylai_hai;
         private System.Windows.Forms.Button btn_nhapLai_hai;
         private System.Windows.Forms.ComboBox cb_quyen_hai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mvn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tennv;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mk;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quyen;
     }
 }

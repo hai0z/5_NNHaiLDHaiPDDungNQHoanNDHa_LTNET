@@ -19,7 +19,7 @@ namespace QLBHTH_PhanDinhDung
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_hoadon_hai("hd777"));
+            Application.Run(new frm_dangnhap_dung());
         }
     }
 }

@@ -45,6 +45,11 @@
             this.btn_xoa_LDHai = new System.Windows.Forms.Button();
             this.btn_nhaplai_LDHai = new System.Windows.Forms.Button();
             this.btn_ql_LDHai = new System.Windows.Forms.Button();
+            this.mkh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tkh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_qlkh_LDHai)).BeginInit();
             this.SuspendLayout();
             // 
@@ -114,6 +119,12 @@
             this.dgv_qlkh_LDHai.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_qlkh_LDHai.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dgv_qlkh_LDHai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_qlkh_LDHai.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.mkh,
+            this.tkh,
+            this.dc,
+            this.quan,
+            this.tp});
             this.dgv_qlkh_LDHai.Location = new System.Drawing.Point(12, 345);
             this.dgv_qlkh_LDHai.Name = "dgv_qlkh_LDHai";
             this.dgv_qlkh_LDHai.Size = new System.Drawing.Size(877, 179);
@@ -205,6 +216,36 @@
             this.btn_ql_LDHai.UseVisualStyleBackColor = true;
             this.btn_ql_LDHai.Click += new System.EventHandler(this.btn_ql_LDHai_Click);
             // 
+            // mkh
+            // 
+            this.mkh.DataPropertyName = "MaKH";
+            this.mkh.HeaderText = "Mã khách hàng";
+            this.mkh.Name = "mkh";
+            // 
+            // tkh
+            // 
+            this.tkh.DataPropertyName = "TenKH";
+            this.tkh.HeaderText = "Tên khách hàng";
+            this.tkh.Name = "tkh";
+            // 
+            // dc
+            // 
+            this.dc.DataPropertyName = "Diachi";
+            this.dc.HeaderText = "Địa chỉ";
+            this.dc.Name = "dc";
+            // 
+            // quan
+            // 
+            this.quan.DataPropertyName = "Quan";
+            this.quan.HeaderText = "Quận";
+            this.quan.Name = "quan";
+            // 
+            // tp
+            // 
+            this.tp.DataPropertyName = "Thanhpho";
+            this.tp.HeaderText = "Thành phố";
+            this.tp.Name = "tp";
+            // 
             // frm_qlkh_LDHai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -257,5 +298,10 @@
         private System.Windows.Forms.Button btn_xoa_LDHai;
         private System.Windows.Forms.Button btn_nhaplai_LDHai;
         private System.Windows.Forms.Button btn_ql_LDHai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mkh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tkh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tp;
     }
 }

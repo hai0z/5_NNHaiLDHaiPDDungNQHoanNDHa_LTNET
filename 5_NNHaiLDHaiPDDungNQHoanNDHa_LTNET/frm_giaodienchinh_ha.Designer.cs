@@ -40,6 +40,8 @@
             this.btn_gttv_ha = new System.Windows.Forms.Button();
             this.btn_dangxuat_ha = new System.Windows.Forms.Button();
             this.lb_tennv_ha = new System.Windows.Forms.Label();
+            this.btn_baocao_hai = new System.Windows.Forms.Button();
+            this.btn_qlhd_hai = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,6 +111,7 @@
             this.btn_qldoanhthu_ha.TabIndex = 6;
             this.btn_qldoanhthu_ha.Text = "Quản Lý Doanh Thu";
             this.btn_qldoanhthu_ha.UseVisualStyleBackColor = true;
+            this.btn_qldoanhthu_ha.Click += new System.EventHandler(this.btn_qldoanhthu_ha_Click);
             // 
             // btn_qlkhachhang_ha
             // 
@@ -185,12 +188,42 @@
             this.lb_tennv_ha.TabIndex = 9;
             this.lb_tennv_ha.Text = "label2";
             // 
+            // btn_baocao_hai
+            // 
+            this.btn_baocao_hai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_baocao_hai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_baocao_hai.ForeColor = System.Drawing.Color.Olive;
+            this.btn_baocao_hai.Location = new System.Drawing.Point(245, 206);
+            this.btn_baocao_hai.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_baocao_hai.Name = "btn_baocao_hai";
+            this.btn_baocao_hai.Size = new System.Drawing.Size(171, 31);
+            this.btn_baocao_hai.TabIndex = 10;
+            this.btn_baocao_hai.Text = "Thống kê báo cáo";
+            this.btn_baocao_hai.UseVisualStyleBackColor = true;
+            this.btn_baocao_hai.Click += new System.EventHandler(this.btn_baocao_hai_Click);
+            // 
+            // btn_qlhd_hai
+            // 
+            this.btn_qlhd_hai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_qlhd_hai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_qlhd_hai.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btn_qlhd_hai.Location = new System.Drawing.Point(245, 266);
+            this.btn_qlhd_hai.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_qlhd_hai.Name = "btn_qlhd_hai";
+            this.btn_qlhd_hai.Size = new System.Drawing.Size(171, 31);
+            this.btn_qlhd_hai.TabIndex = 11;
+            this.btn_qlhd_hai.Text = "Quản lý hoá đơn";
+            this.btn_qlhd_hai.UseVisualStyleBackColor = true;
+            this.btn_qlhd_hai.Click += new System.EventHandler(this.btn_qlhd_hai_Click);
+            // 
             // frm_giaodienchinh_ha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1079, 638);
+            this.Controls.Add(this.btn_qlhd_hai);
+            this.Controls.Add(this.btn_baocao_hai);
             this.Controls.Add(this.lb_tennv_ha);
             this.Controls.Add(this.btn_dangxuat_ha);
             this.Controls.Add(this.pictureBox1);
@@ -227,5 +260,7 @@
         private System.Windows.Forms.Button btn_gttv_ha;
         private System.Windows.Forms.Button btn_dangxuat_ha;
         private System.Windows.Forms.Label lb_tennv_ha;
+        private System.Windows.Forms.Button btn_baocao_hai;
+        private System.Windows.Forms.Button btn_qlhd_hai;
     }
 }

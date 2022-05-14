@@ -63,6 +63,10 @@
             this.tt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label6 = new System.Windows.Forms.Label();
             this.dataSet11 = new QLBHTH_PhanDinhDung.DataSet1();
+            this.mahang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenhang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dvt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_muahang_LDHai)).BeginInit();
@@ -206,6 +210,11 @@
             // 
             this.dgv_muahang_LDHai.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_muahang_LDHai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_muahang_LDHai.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.mahang,
+            this.tenhang,
+            this.dvt,
+            this.soluong});
             this.dgv_muahang_LDHai.Location = new System.Drawing.Point(6, 120);
             this.dgv_muahang_LDHai.Name = "dgv_muahang_LDHai";
             this.dgv_muahang_LDHai.Size = new System.Drawing.Size(1098, 231);
@@ -395,6 +404,30 @@
             this.dataSet11.DataSetName = "DataSet1";
             this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // mahang
+            // 
+            this.mahang.DataPropertyName = "Mahang";
+            this.mahang.HeaderText = "Mã hàng";
+            this.mahang.Name = "mahang";
+            // 
+            // tenhang
+            // 
+            this.tenhang.DataPropertyName = "Tenhang";
+            this.tenhang.HeaderText = "Tên sản phẩm";
+            this.tenhang.Name = "tenhang";
+            // 
+            // dvt
+            // 
+            this.dvt.DataPropertyName = "DVT";
+            this.dvt.HeaderText = "Đơn vị tính";
+            this.dvt.Name = "dvt";
+            // 
+            // soluong
+            // 
+            this.soluong.DataPropertyName = "Dongia";
+            this.soluong.HeaderText = "Đơn giá";
+            this.soluong.Name = "soluong";
+            // 
             // frm_qlmuahang_LDHai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -453,5 +486,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn sl;
         private System.Windows.Forms.DataGridViewTextBoxColumn dg;
         private System.Windows.Forms.DataGridViewTextBoxColumn tt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mahang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenhang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dvt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soluong;
     }
 }

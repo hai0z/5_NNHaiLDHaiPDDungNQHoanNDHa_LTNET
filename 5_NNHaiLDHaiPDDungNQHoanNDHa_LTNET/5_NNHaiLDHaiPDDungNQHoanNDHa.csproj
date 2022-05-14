@@ -74,6 +74,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frm_baocao_hai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_baocao_hai.Designer.cs">
+      <DependentUpon>frm_baocao_hai.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_dangnhap_dung.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,11 +109,23 @@
     <Compile Include="frm_hoadon_hai.Designer.cs">
       <DependentUpon>frm_hoadon_hai.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_qldoanhthu_hai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_qldoanhthu_hai.Designer.cs">
+      <DependentUpon>frm_qldoanhthu_hai.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_qlhh_LDHai.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_qlhh_LDHai.Designer.cs">
       <DependentUpon>frm_qlhh_LDHai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_qlhoadon_hai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_qlhoadon_hai.Designer.cs">
+      <DependentUpon>frm_qlhoadon_hai.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_qlkh_LDHai.cs">
       <SubType>Form</SubType>
@@ -136,6 +159,9 @@
       <DependentUpon>qlbh_dung.dbml</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="frm_baocao_hai.resx">
+      <DependentUpon>frm_baocao_hai.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_dangnhap_dung.resx">
       <DependentUpon>frm_dangnhap_dung.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,8 +174,14 @@
     <EmbeddedResource Include="frm_hoadon_hai.resx">
       <DependentUpon>frm_hoadon_hai.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_qldoanhthu_hai.resx">
+      <DependentUpon>frm_qldoanhthu_hai.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_qlhh_LDHai.resx">
       <DependentUpon>frm_qlhh_LDHai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_qlhoadon_hai.resx">
+      <DependentUpon>frm_qlhoadon_hai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_qlkh_LDHai.resx">
       <DependentUpon>frm_qlkh_LDHai.cs</DependentUpon>
@@ -172,6 +204,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="rp_baocao_hai.rdlc" />
     <EmbeddedResource Include="rp_hoadon_hai.rdlc" />
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
@@ -183,6 +216,17 @@
     </None>
     <None Include="DataSet1.xss">
       <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

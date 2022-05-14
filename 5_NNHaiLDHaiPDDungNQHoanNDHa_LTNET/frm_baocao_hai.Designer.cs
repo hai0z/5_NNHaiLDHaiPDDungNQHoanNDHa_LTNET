@@ -1,6 +1,6 @@
 ﻿namespace QLBHTH_PhanDinhDung
 {
-    partial class frm_hoadon_hai
+    partial class frm_baocao_hai
     {
         /// <summary>
         /// Required designer variable.
@@ -28,36 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.rpv_hoadon_hai = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.rp_baocao_hai = new Microsoft.Reporting.WinForms.ReportViewer();
             this.SuspendLayout();
             // 
-            // rpv_hoadon_hai
+            // rp_baocao_hai
             // 
-            this.rpv_hoadon_hai.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rpv_hoadon_hai.Location = new System.Drawing.Point(0, 0);
-            this.rpv_hoadon_hai.Name = "rpv_hoadon_hai";
-            this.rpv_hoadon_hai.ServerReport.BearerToken = null;
-            this.rpv_hoadon_hai.Size = new System.Drawing.Size(874, 589);
-            this.rpv_hoadon_hai.TabIndex = 0;
-            this.rpv_hoadon_hai.Load += new System.EventHandler(this.rpv_hoadon_hai_Load);
+            this.rp_baocao_hai.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rp_baocao_hai.LocalReport.ReportEmbeddedResource = "QLBHTH_PhanDinhDung.rp_baocao_hai.rdlc";
+            this.rp_baocao_hai.Location = new System.Drawing.Point(0, 0);
+            this.rp_baocao_hai.Name = "rp_baocao_hai";
+            this.rp_baocao_hai.ServerReport.BearerToken = null;
+            this.rp_baocao_hai.Size = new System.Drawing.Size(877, 538);
+            this.rp_baocao_hai.TabIndex = 0;
+            this.rp_baocao_hai.Load += new System.EventHandler(this.rp_baocao_hai_Load);
             // 
-            // frm_hoadon_hai
+            // frm_baocao_hai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(874, 589);
-            this.Controls.Add(this.rpv_hoadon_hai);
-            this.Name = "frm_hoadon_hai";
+            this.ClientSize = new System.Drawing.Size(877, 538);
+            this.Controls.Add(this.rp_baocao_hai);
+            this.Name = "frm_baocao_hai";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_hoadon_hai";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frm_hoadon_hai_FormClosed);
-            this.Load += new System.EventHandler(this.frm_hoadon_hai_Load);
+            this.Text = "frm_baocao_hai";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frm_baocao_hai_FormClosed);
+            this.Load += new System.EventHandler(this.frm_baocao_hai_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Microsoft.Reporting.WinForms.ReportViewer rpv_hoadon_hai;
+        private Microsoft.Reporting.WinForms.ReportViewer rp_baocao_hai;
     }
 }

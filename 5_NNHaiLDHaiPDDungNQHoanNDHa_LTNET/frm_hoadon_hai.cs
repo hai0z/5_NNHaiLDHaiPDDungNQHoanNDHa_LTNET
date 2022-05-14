@@ -48,5 +48,11 @@ namespace QLBHTH_PhanDinhDung
             ReportDataSource rds = new ReportDataSource("DataSet1", ds);
             rpv_hoadon_hai.LocalReport.DataSources.Add(rds);
         }
+
+        private void frm_hoadon_hai_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Hide();
+            
+        }
     }
 }

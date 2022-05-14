@@ -39,6 +39,8 @@
             this.btn_nhaplai_hoan = new System.Windows.Forms.Button();
             this.dgv_loaihang_hoan = new System.Windows.Forms.DataGridView();
             this.btn_quaylai_hoan = new System.Windows.Forms.Button();
+            this.mlh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenloai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_loaihang_hoan)).BeginInit();
             this.SuspendLayout();
             // 
@@ -138,8 +140,11 @@
             this.dgv_loaihang_hoan.AllowUserToAddRows = false;
             this.dgv_loaihang_hoan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_loaihang_hoan.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgv_loaihang_hoan.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgv_loaihang_hoan.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.dgv_loaihang_hoan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_loaihang_hoan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.mlh,
+            this.tenloai});
             this.dgv_loaihang_hoan.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgv_loaihang_hoan.Location = new System.Drawing.Point(0, 274);
             this.dgv_loaihang_hoan.Margin = new System.Windows.Forms.Padding(2);
@@ -160,6 +165,18 @@
             this.btn_quaylai_hoan.Text = "Quay Lại";
             this.btn_quaylai_hoan.UseVisualStyleBackColor = true;
             this.btn_quaylai_hoan.Click += new System.EventHandler(this.btn_quaylai_hoan_Click);
+            // 
+            // mlh
+            // 
+            this.mlh.DataPropertyName = "Maloai";
+            this.mlh.HeaderText = "Mã loại hàng";
+            this.mlh.Name = "mlh";
+            // 
+            // tenloai
+            // 
+            this.tenloai.DataPropertyName = "Tenloai";
+            this.tenloai.HeaderText = "Tên loại hàng";
+            this.tenloai.Name = "tenloai";
             // 
             // frm_qlloaihang_hoan
             // 
@@ -201,5 +218,7 @@
         private System.Windows.Forms.Button btn_nhaplai_hoan;
         private System.Windows.Forms.DataGridView dgv_loaihang_hoan;
         private System.Windows.Forms.Button btn_quaylai_hoan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mlh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenloai;
     }
 }
