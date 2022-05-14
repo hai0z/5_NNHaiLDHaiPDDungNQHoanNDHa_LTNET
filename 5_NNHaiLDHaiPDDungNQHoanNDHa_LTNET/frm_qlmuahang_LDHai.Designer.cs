@@ -42,6 +42,10 @@
             this.txt_msp_LDHai = new System.Windows.Forms.TextBox();
             this.btn_them_LDHai = new System.Windows.Forms.Button();
             this.dgv_muahang_LDHai = new System.Windows.Forms.DataGridView();
+            this.mahang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenhang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dvt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.txt_ttl_LDHai = new System.Windows.Forms.TextBox();
             this.txt_tkd_LDHai = new System.Windows.Forms.TextBox();
@@ -63,10 +67,6 @@
             this.tt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label6 = new System.Windows.Forms.Label();
             this.dataSet11 = new QLBHTH_PhanDinhDung.DataSet1();
-            this.mahang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenhang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dvt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_muahang_LDHai)).BeginInit();
@@ -220,6 +220,30 @@
             this.dgv_muahang_LDHai.Size = new System.Drawing.Size(1098, 231);
             this.dgv_muahang_LDHai.TabIndex = 0;
             this.dgv_muahang_LDHai.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_muahang_LDHai_CellClick);
+            // 
+            // mahang
+            // 
+            this.mahang.DataPropertyName = "Mahang";
+            this.mahang.HeaderText = "Mã hàng";
+            this.mahang.Name = "mahang";
+            // 
+            // tenhang
+            // 
+            this.tenhang.DataPropertyName = "Tenhang";
+            this.tenhang.HeaderText = "Tên sản phẩm";
+            this.tenhang.Name = "tenhang";
+            // 
+            // dvt
+            // 
+            this.dvt.DataPropertyName = "DVT";
+            this.dvt.HeaderText = "Đơn vị tính";
+            this.dvt.Name = "dvt";
+            // 
+            // soluong
+            // 
+            this.soluong.DataPropertyName = "Dongia";
+            this.soluong.HeaderText = "Đơn giá";
+            this.soluong.Name = "soluong";
             // 
             // tabPage2
             // 
@@ -404,30 +428,6 @@
             this.dataSet11.DataSetName = "DataSet1";
             this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // mahang
-            // 
-            this.mahang.DataPropertyName = "Mahang";
-            this.mahang.HeaderText = "Mã hàng";
-            this.mahang.Name = "mahang";
-            // 
-            // tenhang
-            // 
-            this.tenhang.DataPropertyName = "Tenhang";
-            this.tenhang.HeaderText = "Tên sản phẩm";
-            this.tenhang.Name = "tenhang";
-            // 
-            // dvt
-            // 
-            this.dvt.DataPropertyName = "DVT";
-            this.dvt.HeaderText = "Đơn vị tính";
-            this.dvt.Name = "dvt";
-            // 
-            // soluong
-            // 
-            this.soluong.DataPropertyName = "Dongia";
-            this.soluong.HeaderText = "Đơn giá";
-            this.soluong.Name = "soluong";
-            // 
             // frm_qlmuahang_LDHai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -435,6 +435,7 @@
             this.ClientSize = new System.Drawing.Size(1120, 581);
             this.Controls.Add(this.tabControl1);
             this.Name = "frm_qlmuahang_LDHai";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_qlmuahang_LDHai";
             this.Load += new System.EventHandler(this.frm_qlmuahang_LDHai_Load);
             this.tabControl1.ResumeLayout(false);

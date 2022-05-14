@@ -188,7 +188,6 @@ namespace QLBHTH_PhanDinhDung
                 }
                 MessageBox.Show("Lập hoá đơn thành công");
                 frm_hoadon_hai rp_hoadon = new frm_hoadon_hai(mahoadon);
-                Hide();
                 rp_hoadon.Show();
             }
             catch (Exception)

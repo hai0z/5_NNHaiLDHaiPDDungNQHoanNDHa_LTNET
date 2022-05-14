@@ -20,12 +20,12 @@ namespace QLBHTH_PhanDinhDung
         private void load(DateTime date)
         {
             qlbh_dungDataContext qlbh = new qlbh_dungDataContext();
-            var ds = qlbh.CT_Hoadons.Select(nhanvien => new
+            var ds = qlbh.CT_Hoadons.Select(x => new
             {
-                nhanvien.Hoadon.Nhanvien.TenNV,
-                nhanvien.Hoadon.Nhanvien.MaNV,
-                nhanvien.Hoadon.Ngayban,
-                Thanhtien = nhanvien.Soluong * nhanvien.Dongiaban
+                x.Hoadon.Nhanvien.TenNV,
+                x.Hoadon.Nhanvien.MaNV,
+                x.Hoadon.Ngayban,
+                Thanhtien = x.Soluong * x.Dongiaban
 
             }).Where(nv => nv.Ngayban == date);
 
