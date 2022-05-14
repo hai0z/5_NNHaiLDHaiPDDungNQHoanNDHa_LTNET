@@ -39,7 +39,7 @@ namespace QLBHTH_PhanDinhDung
                 cthd.Hanghoa.Tenhang,
                 cthd.Soluong,
                 cthd.Dongiaban,
-                cthd.Hoadon.Ngayban,
+                Ngayban = DateTime.Parse(cthd.Hoadon.Ngayban.ToString()).ToString("dd/MM/yyyy"),
                 cthd.Hoadon.Khachhang.TenKH,
                 cthd.Hanghoa.DVT,
                 cthd.Hoadon.Nhanvien.TenNV,

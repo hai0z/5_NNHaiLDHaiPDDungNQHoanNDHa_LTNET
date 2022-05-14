@@ -10,17 +10,21 @@
             <TextRuns>
               <TextRun>
                 <Value>Hoá đơn bán hàng</Value>
-                <Style />
+                <Style>
+                  <FontSize>16pt</FontSize>
+                </Style>
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>0.405in</Top>
-        <Left>4.20708in</Left>
+        <Top>0.4675in</Top>
+        <Left>3.6029in</Left>
         <Height>0.25in</Height>
-        <Width>2.52083in</Width>
+        <Width>2.51041in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -42,14 +46,16 @@
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>1.50521in</Top>
-        <Left>3.54167in</Left>
+        <Top>1.56771in</Top>
+        <Left>2.93749in</Left>
         <Height>0.25in</Height>
-        <Width>2.20833in</Width>
+        <Width>2.19791in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -78,10 +84,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>1.50521in</Top>
-        <Left>2.02083in</Left>
+        <Top>1.56771in</Top>
+        <Left>1.41665in</Left>
         <Height>0.25in</Height>
-        <Width>1.28125in</Width>
+        <Width>1.27083in</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -104,14 +110,16 @@
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>1.07812in</Top>
-        <Left>3.54167in</Left>
+        <Top>1.14062in</Top>
+        <Left>2.93749in</Left>
         <Height>0.25in</Height>
-        <Width>2.20833in</Width>
+        <Width>2.19791in</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>
@@ -140,10 +148,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>1.07812in</Top>
-        <Left>2.02083in</Left>
+        <Top>1.14062in</Top>
+        <Left>1.41665in</Left>
         <Height>0.25in</Height>
-        <Width>1.28125in</Width>
+        <Width>1.27083in</Width>
         <ZIndex>4</ZIndex>
         <Style>
           <Border>
@@ -166,14 +174,16 @@
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>2.03646in</Top>
-        <Left>3.54167in</Left>
+        <Top>2.09896in</Top>
+        <Left>2.93749in</Left>
         <Height>0.25in</Height>
-        <Width>2.20833in</Width>
+        <Width>2.19791in</Width>
         <ZIndex>5</ZIndex>
         <Style>
           <Border>
@@ -202,10 +212,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>2.03646in</Top>
-        <Left>2.02083in</Left>
+        <Top>2.09896in</Top>
+        <Left>1.41665in</Left>
         <Height>0.25in</Height>
-        <Width>1.28125in</Width>
+        <Width>1.27083in</Width>
         <ZIndex>6</ZIndex>
         <Style>
           <Border>
@@ -234,10 +244,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>1.07812in</Top>
-        <Left>6.36979in</Left>
+        <Top>1.14062in</Top>
+        <Left>5.76561in</Left>
         <Height>0.25in</Height>
-        <Width>0.71181in</Width>
+        <Width>0.70139in</Width>
         <ZIndex>7</ZIndex>
         <Style>
           <Border>
@@ -260,14 +270,16 @@
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>1.07812in</Top>
-        <Left>7.15104in</Left>
+        <Top>1.14062in</Top>
+        <Left>6.54686in</Left>
         <Height>0.25in</Height>
-        <Width>1.4375in</Width>
+        <Width>1.42708in</Width>
         <ZIndex>8</ZIndex>
         <Style>
           <Border>
@@ -283,19 +295,19 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.44618in</Width>
+              <Width>2.4441in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.9184in</Width>
+              <Width>0.91632in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.09201in</Width>
+              <Width>1.08993in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>0.99792in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>0.99792in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -312,10 +324,14 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Tên mặt hàng</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox10</rd:DefaultName>
@@ -342,10 +358,14 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Đơn vị tính</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox12</rd:DefaultName>
@@ -372,10 +392,14 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Đơn giá</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox14</rd:DefaultName>
@@ -402,10 +426,14 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Số lượng</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox16</rd:DefaultName>
@@ -432,10 +460,14 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Tiền</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox18</rd:DefaultName>
@@ -470,7 +502,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Tenhang</rd:DefaultName>
@@ -500,7 +534,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>DVT</rd:DefaultName>
@@ -530,7 +566,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Dongiaban</rd:DefaultName>
@@ -560,7 +598,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Soluong</rd:DefaultName>
@@ -590,7 +630,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Thanhtien</rd:DefaultName>
@@ -631,10 +673,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>3.17583in</Top>
-        <Left>2.02083in</Left>
+        <Top>3.23833in</Top>
+        <Left>1.41665in</Left>
         <Height>0.9375in</Height>
-        <Width>6.4566in</Width>
+        <Width>6.44617in</Width>
         <ZIndex>9</ZIndex>
         <Style>
           <Border>
@@ -659,10 +701,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox20</rd:DefaultName>
-        <Top>4.35292in</Top>
-        <Left>2.02083in</Left>
+        <Top>4.41542in</Top>
+        <Left>1.41665in</Left>
         <Height>0.25in</Height>
-        <Width>1in</Width>
+        <Width>0.98958in</Width>
         <ZIndex>10</ZIndex>
         <Style>
           <Border>
@@ -691,10 +733,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox21</rd:DefaultName>
-        <Top>4.41542in</Top>
-        <Left>7.47743in</Left>
+        <Top>4.47792in</Top>
+        <Left>6.87325in</Left>
         <Height>0.25in</Height>
-        <Width>1in</Width>
+        <Width>0.98958in</Width>
         <ZIndex>11</ZIndex>
         <Style>
           <Border>
@@ -710,7 +752,7 @@
     <Height>5.55208in</Height>
     <Style />
   </Body>
-  <Width>14.11458in</Width>
+  <Width>10.05208in</Width>
   <Page>
     <LeftMargin>1in</LeftMargin>
     <RightMargin>1in</RightMargin>

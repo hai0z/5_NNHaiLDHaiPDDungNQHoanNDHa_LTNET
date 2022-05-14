@@ -37,7 +37,7 @@
             this.rpv_hoadon_hai.Location = new System.Drawing.Point(0, 0);
             this.rpv_hoadon_hai.Name = "rpv_hoadon_hai";
             this.rpv_hoadon_hai.ServerReport.BearerToken = null;
-            this.rpv_hoadon_hai.Size = new System.Drawing.Size(1083, 589);
+            this.rpv_hoadon_hai.Size = new System.Drawing.Size(874, 589);
             this.rpv_hoadon_hai.TabIndex = 0;
             this.rpv_hoadon_hai.Load += new System.EventHandler(this.rpv_hoadon_hai_Load);
             // 
@@ -45,7 +45,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1083, 589);
+            this.ClientSize = new System.Drawing.Size(874, 589);
             this.Controls.Add(this.rpv_hoadon_hai);
             this.Name = "frm_hoadon_hai";
             this.Text = "frm_hoadon_hai";
