@@ -32,12 +32,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txt_mahoadon_hai = new System.Windows.Forms.TextBox();
             this.dgv_hoadon_hai = new System.Windows.Forms.DataGridView();
-            this.btn_xem_hai = new System.Windows.Forms.Button();
-            this.btn_quaylai_hai = new System.Windows.Forms.Button();
             this.sohd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngayban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tennv = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tkh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_xem_hai = new System.Windows.Forms.Button();
+            this.btn_quaylai_hai = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_hoadon_hai)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,31 +80,12 @@
             this.tennv,
             this.tkh});
             this.dgv_hoadon_hai.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgv_hoadon_hai.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.dgv_hoadon_hai.Location = new System.Drawing.Point(0, 278);
             this.dgv_hoadon_hai.Name = "dgv_hoadon_hai";
             this.dgv_hoadon_hai.Size = new System.Drawing.Size(892, 264);
             this.dgv_hoadon_hai.TabIndex = 3;
             this.dgv_hoadon_hai.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_hoadon_hai_CellClick);
-            // 
-            // btn_xem_hai
-            // 
-            this.btn_xem_hai.Location = new System.Drawing.Point(339, 179);
-            this.btn_xem_hai.Name = "btn_xem_hai";
-            this.btn_xem_hai.Size = new System.Drawing.Size(75, 23);
-            this.btn_xem_hai.TabIndex = 4;
-            this.btn_xem_hai.Text = "Xem chi tiết";
-            this.btn_xem_hai.UseVisualStyleBackColor = true;
-            this.btn_xem_hai.Click += new System.EventHandler(this.btn_xem_hai_Click);
-            // 
-            // btn_quaylai_hai
-            // 
-            this.btn_quaylai_hai.Location = new System.Drawing.Point(507, 179);
-            this.btn_quaylai_hai.Name = "btn_quaylai_hai";
-            this.btn_quaylai_hai.Size = new System.Drawing.Size(75, 23);
-            this.btn_quaylai_hai.TabIndex = 4;
-            this.btn_quaylai_hai.Text = "Quay lại";
-            this.btn_quaylai_hai.UseVisualStyleBackColor = true;
-            this.btn_quaylai_hai.Click += new System.EventHandler(this.btn_quaylai_hai_Click);
             // 
             // sohd
             // 
@@ -129,6 +110,26 @@
             this.tkh.DataPropertyName = "TenKH";
             this.tkh.HeaderText = "Tên khách hàng";
             this.tkh.Name = "tkh";
+            // 
+            // btn_xem_hai
+            // 
+            this.btn_xem_hai.Location = new System.Drawing.Point(339, 179);
+            this.btn_xem_hai.Name = "btn_xem_hai";
+            this.btn_xem_hai.Size = new System.Drawing.Size(75, 23);
+            this.btn_xem_hai.TabIndex = 4;
+            this.btn_xem_hai.Text = "Xem chi tiết";
+            this.btn_xem_hai.UseVisualStyleBackColor = true;
+            this.btn_xem_hai.Click += new System.EventHandler(this.btn_xem_hai_Click);
+            // 
+            // btn_quaylai_hai
+            // 
+            this.btn_quaylai_hai.Location = new System.Drawing.Point(507, 179);
+            this.btn_quaylai_hai.Name = "btn_quaylai_hai";
+            this.btn_quaylai_hai.Size = new System.Drawing.Size(75, 23);
+            this.btn_quaylai_hai.TabIndex = 4;
+            this.btn_quaylai_hai.Text = "Quay lại";
+            this.btn_quaylai_hai.UseVisualStyleBackColor = true;
+            this.btn_quaylai_hai.Click += new System.EventHandler(this.btn_quaylai_hai_Click);
             // 
             // frm_qlhoadon_hai
             // 

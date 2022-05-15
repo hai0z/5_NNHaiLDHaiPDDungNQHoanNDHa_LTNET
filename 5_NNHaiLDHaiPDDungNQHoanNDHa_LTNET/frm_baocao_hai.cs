@@ -38,6 +38,15 @@ namespace QLBHTH_PhanDinhDung
                 Thanhtien = hd.Dongiaban * hd.Soluong
             }) ;
             ReportDataSource rds = new ReportDataSource("DataSet1", ds);
+            rp_baocao_hai.LocalReport.DataSources.Clear();
+            var nhanvien = qlbh.Nhanviens.Select(nv => new
+            {
+               nv.MaNV,nv.TenNV
+            }).Where(nv => nv.MaNV == Program.mnv);
+            //add parameter
+            ReportParameter[] rp = new ReportParameter[1];
+            rp[0] = new ReportParameter("nguoilaphoadon", nhanvien.First().TenNV.ToString());
+            rp_baocao_hai.LocalReport.SetParameters(rp);
             rp_baocao_hai.LocalReport.DataSources.Add(rds);
             rp_baocao_hai.RefreshReport();
         }

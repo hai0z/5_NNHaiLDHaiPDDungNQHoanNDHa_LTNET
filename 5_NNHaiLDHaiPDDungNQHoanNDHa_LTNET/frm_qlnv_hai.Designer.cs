@@ -99,6 +99,7 @@
             this.mk,
             this.quyen});
             this.dgv_nv_hai.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgv_nv_hai.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.dgv_nv_hai.Location = new System.Drawing.Point(0, 373);
             this.dgv_nv_hai.Name = "dgv_nv_hai";
             this.dgv_nv_hai.Size = new System.Drawing.Size(939, 224);
