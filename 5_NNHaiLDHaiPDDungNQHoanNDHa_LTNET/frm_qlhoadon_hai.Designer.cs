@@ -68,6 +68,7 @@
             this.txt_mahoadon_hai.Name = "txt_mahoadon_hai";
             this.txt_mahoadon_hai.Size = new System.Drawing.Size(243, 20);
             this.txt_mahoadon_hai.TabIndex = 2;
+            this.txt_mahoadon_hai.TextChanged += new System.EventHandler(this.txt_mahoadon_hai_TextChanged);
             // 
             // dgv_hoadon_hai
             // 

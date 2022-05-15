@@ -29,6 +29,12 @@ namespace QLBHTH_PhanDinhDung
         }
         private void btn_xem_hai_Click(object sender, EventArgs e)
         {
+            if (txt_mahoadon_hai.Text.Trim() == "")
+            {
+                MessageBox.Show("Bạn chưa nhập mã hóa đơn");
+                txt_mahoadon_hai.Focus();
+                return;
+            }
             frm_hoadon_hai hd = new frm_hoadon_hai(txt_mahoadon_hai.Text);
             hd.ShowDialog();
         }
@@ -49,6 +55,20 @@ namespace QLBHTH_PhanDinhDung
         {
             int i = dgv_hoadon_hai.CurrentRow.Index;
             txt_mahoadon_hai.Text = dgv_hoadon_hai.Rows[i].Cells[0].Value.ToString();
+        }
+
+        private void txt_mahoadon_hai_TextChanged(object sender, EventArgs e)
+        {
+            if (txt_mahoadon_hai.Text == "")
+            {
+                load();
+            }
+            else
+            {
+                qlbh_dungDataContext qlbh = new qlbh_dungDataContext();
+                var hd = qlbh.Hoadons.Where(p => p.SoHD.Contains(txt_mahoadon_hai.Text)).Select(p => new { p.SoHD, p.Ngayban, p.Nhanvien.TenNV, p.Khachhang.TenKH });
+                dgv_hoadon_hai.DataSource = hd;
+            }
         }
     }
 }

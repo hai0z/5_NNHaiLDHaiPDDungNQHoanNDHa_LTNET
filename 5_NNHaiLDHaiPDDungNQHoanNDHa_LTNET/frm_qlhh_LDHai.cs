@@ -27,9 +27,7 @@ namespace QLBHTH_PhanDinhDung
         }
         private void load() {
             qlbh_dungDataContext qlhh = new qlbh_dungDataContext();
-            var mh = qlhh.Hanghoas.Select(p => p)
-                .Join(qlhh.Loaihangs, p => p.Loaihang, q => q.Maloai, (p,q) 
-                => new {p.Mahang, p.Tenhang, q.Tenloai, p.DVT, p.Dongia});
+            var mh = qlhh.Hanghoas.Select(p => new {p.Mahang,p.Tenhang,p.Loaihang1.Tenloai,p.DVT,p.Dongia});
             dgv_qlhh_LDHai.DataSource = mh;
             cb_lh_LDHai.DataSource = qlhh.Loaihangs.Select(p => p);
             cb_lh_LDHai.DisplayMember = "Tenloai";
@@ -80,7 +78,7 @@ namespace QLBHTH_PhanDinhDung
                     clear();
                     load();
                 }
-            } catch (Exception ex)
+            } catch (Exception)
             {
                 MessageBox.Show("Trùng mã hàng", "Thông báo");
             }
@@ -93,11 +91,11 @@ namespace QLBHTH_PhanDinhDung
                 int i = dgv_qlhh_LDHai.CurrentRow.Index;
                 txt_mh_LDHai.Text = dgv_qlhh_LDHai.Rows[i].Cells[0].Value.ToString();
                 txt_th_LDHai.Text = dgv_qlhh_LDHai.Rows[i].Cells[1].Value.ToString();
-                cb_lh_LDHai.Text = dgv_qlhh_LDHai.Rows[i].Cells[2].Value.ToString();
+                cb_lh_LDHai.Text = dgv_qlhh_LDHai.Rows[i].Cells[2].Value == null ? "" : dgv_qlhh_LDHai.Rows[i].Cells[2].Value.ToString();
                 txt_dvt_LDHai.Text = dgv_qlhh_LDHai.Rows[i].Cells[3].Value.ToString();
                 txt_dg_LDHai.Text = dgv_qlhh_LDHai.Rows[i].Cells[4].Value.ToString();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
             }
         }

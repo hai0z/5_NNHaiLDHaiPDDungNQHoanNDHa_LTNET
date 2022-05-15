@@ -165,6 +165,11 @@ namespace QLBHTH_PhanDinhDung
         {
             try
             {
+                if (txt_mhd_LDHai.Text.Trim() == "")
+                {
+                    MessageBox.Show("Chưa nhập mã hóa đơn","thông báo");
+                    return;
+                }
                 string mahoadon = txt_mhd_LDHai.Text;
                 string makhachhang = cbx_tkh_LDHai.SelectedValue.ToString();
                 DateTime ngaylap = DateTime.Now;
