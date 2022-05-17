@@ -1,4 +1,6 @@
-﻿namespace QLBHTH_PhanDinhDung
+﻿using System.Drawing;
+
+namespace QLBHTH_PhanDinhDung
 {
     partial class frm_qlloaihang_hoan
     {
@@ -164,6 +166,8 @@
             this.dgv_loaihang_hoan.Size = new System.Drawing.Size(717, 168);
             this.dgv_loaihang_hoan.TabIndex = 3;
             this.dgv_loaihang_hoan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_loaihang_hoan_CellClick);
+            this.dgv_loaihang_hoan.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_loaihang_hoan.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             // 
             // mlh
             // 

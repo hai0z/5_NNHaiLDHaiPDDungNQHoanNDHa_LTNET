@@ -20,7 +20,13 @@ namespace QLBHTH_PhanDinhDung
         private void load()
         {
             qlbh_dungDataContext qlnv = new qlbh_dungDataContext();
-            var nhanvienList = qlnv.Nhanviens.Select(nv => nv);
+            var nhanvienList = qlnv.Nhanviens.Select(nv => new {
+                nv.MaNV,
+                nv.TenNV,
+                nv.Diachi,
+                nv.Matkhau,
+                Quyen = nv.Quyen == true ? "Quản lý" : "Nhân viên"
+            }).ToList();
             dgv_nv_hai.DataSource = nhanvienList;
         }
         private void frm_qlnv_hai_Load(object sender, EventArgs e)
@@ -115,13 +121,13 @@ namespace QLBHTH_PhanDinhDung
             txt_dc_hai.Text = dgv_nv_hai.Rows[i].Cells[2].Value.ToString();
             txt_mk_hai.Text = dgv_nv_hai.Rows[i].Cells[3].Value.ToString();
             var quyen = dgv_nv_hai.Rows[i].Cells[4].Value.ToString();
-            if(quyen == "True")
+            if(quyen == "Nhân viên")
             {
-                cb_quyen_hai.SelectedIndex = 1;
+                cb_quyen_hai.SelectedIndex = 0;
             }
             else
             {
-                cb_quyen_hai.SelectedIndex = 0;
+                cb_quyen_hai.SelectedIndex = 1;
             }
 
         }

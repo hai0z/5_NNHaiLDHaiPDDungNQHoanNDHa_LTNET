@@ -1,4 +1,6 @@
-﻿namespace QLBHTH_PhanDinhDung
+﻿using System.Drawing;
+
+namespace QLBHTH_PhanDinhDung
 {
     partial class frm_qlkh_LDHai
     {
@@ -131,6 +133,8 @@
             this.dgv_qlkh_LDHai.Size = new System.Drawing.Size(877, 179);
             this.dgv_qlkh_LDHai.TabIndex = 6;
             this.dgv_qlkh_LDHai.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_qlkh_LDHai_CellClick);
+            this.dgv_qlkh_LDHai.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_qlkh_LDHai.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             // 
             // mkh
             // 

@@ -1,4 +1,6 @@
-﻿namespace QLBHTH_PhanDinhDung
+﻿using System.Drawing;
+
+namespace QLBHTH_PhanDinhDung
 {
     partial class frm_qldoanhthu_hai
     {
@@ -90,6 +92,8 @@
             this.dgv_doanhthu_hai.Name = "dgv_doanhthu_hai";
             this.dgv_doanhthu_hai.Size = new System.Drawing.Size(891, 292);
             this.dgv_doanhthu_hai.TabIndex = 8;
+            this.dgv_doanhthu_hai.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_doanhthu_hai.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             // 
             // mvn
             // 
@@ -132,10 +136,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(394, 247);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(304, 227);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 16);
+            this.label3.Size = new System.Drawing.Size(66, 24);
             this.label3.TabIndex = 12;
             this.label3.Text = "label3";
             this.label3.Visible = false;

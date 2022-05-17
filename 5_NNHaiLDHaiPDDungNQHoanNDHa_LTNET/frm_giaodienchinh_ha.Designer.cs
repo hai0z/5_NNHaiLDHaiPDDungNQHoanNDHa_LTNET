@@ -236,6 +236,7 @@
             this.Controls.Add(this.btn_qlmathang_ha);
             this.Controls.Add(this.btn_qlnhanvien_ha);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frm_giaodienchinh_ha";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
