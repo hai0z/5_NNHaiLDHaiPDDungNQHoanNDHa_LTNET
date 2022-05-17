@@ -30,6 +30,11 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.dgv_qlhh_LDHai = new System.Windows.Forms.DataGridView();
+            this.Mahang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tenhang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DVT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DG = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txt_dg_LDHai = new System.Windows.Forms.TextBox();
             this.txt_dvt_LDHai = new System.Windows.Forms.TextBox();
             this.txt_th_LDHai = new System.Windows.Forms.TextBox();
@@ -45,11 +50,6 @@
             this.btn_xoa_LDHai = new System.Windows.Forms.Button();
             this.btn_sua_LDHai = new System.Windows.Forms.Button();
             this.btn_them_LDHai = new System.Windows.Forms.Button();
-            this.Mahang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tenhang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DVT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DG = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_qlhh_LDHai)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,6 +66,7 @@
             // dgv_qlhh_LDHai
             // 
             this.dgv_qlhh_LDHai.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_qlhh_LDHai.BackgroundColor = System.Drawing.Color.White;
             this.dgv_qlhh_LDHai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_qlhh_LDHai.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Mahang,
@@ -79,33 +80,63 @@
             this.dgv_qlhh_LDHai.TabIndex = 6;
             this.dgv_qlhh_LDHai.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_qlhh_LDHai_CellClick);
             // 
+            // Mahang
+            // 
+            this.Mahang.DataPropertyName = "Mahang";
+            this.Mahang.HeaderText = "Mã hàng";
+            this.Mahang.Name = "Mahang";
+            // 
+            // Tenhang
+            // 
+            this.Tenhang.DataPropertyName = "Tenhang";
+            this.Tenhang.HeaderText = "Tên Hàng";
+            this.Tenhang.Name = "Tenhang";
+            // 
+            // TenLoai
+            // 
+            this.TenLoai.DataPropertyName = "TenLoai";
+            this.TenLoai.HeaderText = "Tên loại hàng";
+            this.TenLoai.Name = "TenLoai";
+            // 
+            // DVT
+            // 
+            this.DVT.DataPropertyName = "DVT";
+            this.DVT.HeaderText = "Đơn vị tính";
+            this.DVT.Name = "DVT";
+            // 
+            // DG
+            // 
+            this.DG.DataPropertyName = "Dongia";
+            this.DG.HeaderText = "Đơn giá";
+            this.DG.Name = "DG";
+            // 
             // txt_dg_LDHai
             // 
             this.txt_dg_LDHai.Location = new System.Drawing.Point(547, 148);
             this.txt_dg_LDHai.Name = "txt_dg_LDHai";
             this.txt_dg_LDHai.Size = new System.Drawing.Size(236, 20);
-            this.txt_dg_LDHai.TabIndex = 21;
+            this.txt_dg_LDHai.TabIndex = 5;
             // 
             // txt_dvt_LDHai
             // 
             this.txt_dvt_LDHai.Location = new System.Drawing.Point(547, 96);
             this.txt_dvt_LDHai.Name = "txt_dvt_LDHai";
             this.txt_dvt_LDHai.Size = new System.Drawing.Size(236, 20);
-            this.txt_dvt_LDHai.TabIndex = 20;
+            this.txt_dvt_LDHai.TabIndex = 4;
             // 
             // txt_th_LDHai
             // 
             this.txt_th_LDHai.Location = new System.Drawing.Point(156, 198);
             this.txt_th_LDHai.Name = "txt_th_LDHai";
             this.txt_th_LDHai.Size = new System.Drawing.Size(236, 20);
-            this.txt_th_LDHai.TabIndex = 19;
+            this.txt_th_LDHai.TabIndex = 3;
             // 
             // txt_mh_LDHai
             // 
             this.txt_mh_LDHai.Location = new System.Drawing.Point(156, 96);
             this.txt_mh_LDHai.Name = "txt_mh_LDHai";
             this.txt_mh_LDHai.Size = new System.Drawing.Size(236, 20);
-            this.txt_mh_LDHai.TabIndex = 17;
+            this.txt_mh_LDHai.TabIndex = 1;
             // 
             // label6
             // 
@@ -163,92 +194,73 @@
             this.cb_lh_LDHai.Location = new System.Drawing.Point(156, 144);
             this.cb_lh_LDHai.Name = "cb_lh_LDHai";
             this.cb_lh_LDHai.Size = new System.Drawing.Size(236, 21);
-            this.cb_lh_LDHai.TabIndex = 22;
+            this.cb_lh_LDHai.TabIndex = 2;
             // 
             // btn_ql_LDHai
             // 
-            this.btn_ql_LDHai.Location = new System.Drawing.Point(739, 249);
+            this.btn_ql_LDHai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ql_LDHai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ql_LDHai.Location = new System.Drawing.Point(742, 242);
             this.btn_ql_LDHai.Name = "btn_ql_LDHai";
-            this.btn_ql_LDHai.Size = new System.Drawing.Size(75, 23);
-            this.btn_ql_LDHai.TabIndex = 27;
+            this.btn_ql_LDHai.Size = new System.Drawing.Size(81, 28);
+            this.btn_ql_LDHai.TabIndex = 10;
             this.btn_ql_LDHai.Text = "Quay lại";
             this.btn_ql_LDHai.UseVisualStyleBackColor = true;
             this.btn_ql_LDHai.Click += new System.EventHandler(this.btn_ql_LDHai_Click);
             // 
             // btn_nhaplai_LDHai
             // 
-            this.btn_nhaplai_LDHai.Location = new System.Drawing.Point(580, 249);
+            this.btn_nhaplai_LDHai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_nhaplai_LDHai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_nhaplai_LDHai.Location = new System.Drawing.Point(583, 242);
             this.btn_nhaplai_LDHai.Name = "btn_nhaplai_LDHai";
-            this.btn_nhaplai_LDHai.Size = new System.Drawing.Size(75, 23);
-            this.btn_nhaplai_LDHai.TabIndex = 26;
+            this.btn_nhaplai_LDHai.Size = new System.Drawing.Size(81, 28);
+            this.btn_nhaplai_LDHai.TabIndex = 9;
             this.btn_nhaplai_LDHai.Text = "Nhập lại";
             this.btn_nhaplai_LDHai.UseVisualStyleBackColor = true;
             this.btn_nhaplai_LDHai.Click += new System.EventHandler(this.btn_nhaplai_LDHai_Click);
             // 
             // btn_xoa_LDHai
             // 
-            this.btn_xoa_LDHai.Location = new System.Drawing.Point(421, 249);
+            this.btn_xoa_LDHai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_xoa_LDHai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_xoa_LDHai.Location = new System.Drawing.Point(424, 242);
             this.btn_xoa_LDHai.Name = "btn_xoa_LDHai";
-            this.btn_xoa_LDHai.Size = new System.Drawing.Size(75, 23);
-            this.btn_xoa_LDHai.TabIndex = 25;
+            this.btn_xoa_LDHai.Size = new System.Drawing.Size(81, 28);
+            this.btn_xoa_LDHai.TabIndex = 8;
             this.btn_xoa_LDHai.Text = "Xoá";
             this.btn_xoa_LDHai.UseVisualStyleBackColor = true;
             this.btn_xoa_LDHai.Click += new System.EventHandler(this.btn_xoa_LDHai_Click);
             // 
             // btn_sua_LDHai
             // 
-            this.btn_sua_LDHai.Location = new System.Drawing.Point(262, 249);
+            this.btn_sua_LDHai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_sua_LDHai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_sua_LDHai.Location = new System.Drawing.Point(265, 242);
             this.btn_sua_LDHai.Name = "btn_sua_LDHai";
-            this.btn_sua_LDHai.Size = new System.Drawing.Size(75, 23);
-            this.btn_sua_LDHai.TabIndex = 24;
+            this.btn_sua_LDHai.Size = new System.Drawing.Size(81, 28);
+            this.btn_sua_LDHai.TabIndex = 7;
             this.btn_sua_LDHai.Text = "Sửa";
             this.btn_sua_LDHai.UseVisualStyleBackColor = true;
             this.btn_sua_LDHai.Click += new System.EventHandler(this.btn_sua_LDHai_Click);
             // 
             // btn_them_LDHai
             // 
-            this.btn_them_LDHai.Location = new System.Drawing.Point(103, 249);
+            this.btn_them_LDHai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_them_LDHai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_them_LDHai.Location = new System.Drawing.Point(106, 242);
             this.btn_them_LDHai.Name = "btn_them_LDHai";
-            this.btn_them_LDHai.Size = new System.Drawing.Size(75, 23);
-            this.btn_them_LDHai.TabIndex = 23;
+            this.btn_them_LDHai.Size = new System.Drawing.Size(81, 28);
+            this.btn_them_LDHai.TabIndex = 6;
             this.btn_them_LDHai.Text = "Thêm";
             this.btn_them_LDHai.UseVisualStyleBackColor = true;
             this.btn_them_LDHai.Click += new System.EventHandler(this.btn_them_LDHai_Click);
-            // 
-            // Mahang
-            // 
-            this.Mahang.DataPropertyName = "Mahang";
-            this.Mahang.HeaderText = "Mã hàng";
-            this.Mahang.Name = "Mahang";
-            // 
-            // Tenhang
-            // 
-            this.Tenhang.DataPropertyName = "Tenhang";
-            this.Tenhang.HeaderText = "Tên Hàng";
-            this.Tenhang.Name = "Tenhang";
-            // 
-            // TenLoai
-            // 
-            this.TenLoai.DataPropertyName = "TenLoai";
-            this.TenLoai.HeaderText = "Tên loại hàng";
-            this.TenLoai.Name = "TenLoai";
-            // 
-            // DVT
-            // 
-            this.DVT.DataPropertyName = "DVT";
-            this.DVT.HeaderText = "Đơn vị tính";
-            this.DVT.Name = "DVT";
-            // 
-            // DG
-            // 
-            this.DG.DataPropertyName = "Dongia";
-            this.DG.HeaderText = "Đơn giá";
-            this.DG.Name = "DG";
             // 
             // frm_qlhh_LDHai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(916, 521);
             this.Controls.Add(this.btn_ql_LDHai);
             this.Controls.Add(this.btn_nhaplai_LDHai);

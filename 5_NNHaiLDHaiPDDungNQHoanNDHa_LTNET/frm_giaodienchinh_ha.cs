@@ -61,9 +61,13 @@ namespace QLBHTH_PhanDinhDung
 
         private void btn_qlkhachhang_ha_Click(object sender, EventArgs e)
         {
-            frm_qlkh_LDHai qlkh = new frm_qlkh_LDHai();
-            this.Hide();
-            qlkh.ShowDialog();
+            try
+            {
+                frm_qlkh_LDHai qlkh = new frm_qlkh_LDHai();
+                this.Hide();
+                qlkh.ShowDialog();
+            }
+            catch (Exception){ }
         }
 
         private void btn_qlloaihang_ha_Click(object sender, EventArgs e)

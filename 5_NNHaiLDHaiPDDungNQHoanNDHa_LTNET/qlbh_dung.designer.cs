@@ -691,7 +691,7 @@ namespace QLBHTH_PhanDinhDung
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Loaihang_Hanghoa", Storage="_Loaihang1", ThisKey="Loaihang", OtherKey="Maloai", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Loaihang_Hanghoa", Storage="_Loaihang1", ThisKey="Loaihang", OtherKey="Maloai", IsForeignKey=true, DeleteRule="SET NULL")]
 		public Loaihang Loaihang1
 		{
 			get

@@ -35,6 +35,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.dgv_qlkh_LDHai = new System.Windows.Forms.DataGridView();
+            this.mkh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tkh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txt_mkh_LDHai = new System.Windows.Forms.TextBox();
             this.txt_tkh_LDHai = new System.Windows.Forms.TextBox();
             this.txt_dc_LDHai = new System.Windows.Forms.TextBox();
@@ -45,11 +50,6 @@
             this.btn_xoa_LDHai = new System.Windows.Forms.Button();
             this.btn_nhaplai_LDHai = new System.Windows.Forms.Button();
             this.btn_ql_LDHai = new System.Windows.Forms.Button();
-            this.mkh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tkh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_qlkh_LDHai)).BeginInit();
             this.SuspendLayout();
             // 
@@ -117,6 +117,7 @@
             // 
             this.dgv_qlkh_LDHai.AllowUserToAddRows = false;
             this.dgv_qlkh_LDHai.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_qlkh_LDHai.BackgroundColor = System.Drawing.Color.White;
             this.dgv_qlkh_LDHai.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dgv_qlkh_LDHai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_qlkh_LDHai.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -130,91 +131,6 @@
             this.dgv_qlkh_LDHai.Size = new System.Drawing.Size(877, 179);
             this.dgv_qlkh_LDHai.TabIndex = 6;
             this.dgv_qlkh_LDHai.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_qlkh_LDHai_CellClick);
-            // 
-            // txt_mkh_LDHai
-            // 
-            this.txt_mkh_LDHai.Location = new System.Drawing.Point(202, 112);
-            this.txt_mkh_LDHai.Name = "txt_mkh_LDHai";
-            this.txt_mkh_LDHai.Size = new System.Drawing.Size(236, 20);
-            this.txt_mkh_LDHai.TabIndex = 7;
-            // 
-            // txt_tkh_LDHai
-            // 
-            this.txt_tkh_LDHai.Location = new System.Drawing.Point(202, 161);
-            this.txt_tkh_LDHai.Name = "txt_tkh_LDHai";
-            this.txt_tkh_LDHai.Size = new System.Drawing.Size(236, 20);
-            this.txt_tkh_LDHai.TabIndex = 8;
-            // 
-            // txt_dc_LDHai
-            // 
-            this.txt_dc_LDHai.Location = new System.Drawing.Point(202, 214);
-            this.txt_dc_LDHai.Name = "txt_dc_LDHai";
-            this.txt_dc_LDHai.Size = new System.Drawing.Size(236, 20);
-            this.txt_dc_LDHai.TabIndex = 9;
-            // 
-            // txt_quan_LDHai
-            // 
-            this.txt_quan_LDHai.Location = new System.Drawing.Point(593, 112);
-            this.txt_quan_LDHai.Name = "txt_quan_LDHai";
-            this.txt_quan_LDHai.Size = new System.Drawing.Size(236, 20);
-            this.txt_quan_LDHai.TabIndex = 10;
-            // 
-            // txt_tp_LDHai
-            // 
-            this.txt_tp_LDHai.Location = new System.Drawing.Point(593, 164);
-            this.txt_tp_LDHai.Name = "txt_tp_LDHai";
-            this.txt_tp_LDHai.Size = new System.Drawing.Size(236, 20);
-            this.txt_tp_LDHai.TabIndex = 11;
-            // 
-            // btn_them_LDHai
-            // 
-            this.btn_them_LDHai.Location = new System.Drawing.Point(117, 278);
-            this.btn_them_LDHai.Name = "btn_them_LDHai";
-            this.btn_them_LDHai.Size = new System.Drawing.Size(75, 23);
-            this.btn_them_LDHai.TabIndex = 12;
-            this.btn_them_LDHai.Text = "Thêm";
-            this.btn_them_LDHai.UseVisualStyleBackColor = true;
-            this.btn_them_LDHai.Click += new System.EventHandler(this.btn_them_LDHai_Click);
-            // 
-            // btn_sua_LDHai
-            // 
-            this.btn_sua_LDHai.Location = new System.Drawing.Point(276, 278);
-            this.btn_sua_LDHai.Name = "btn_sua_LDHai";
-            this.btn_sua_LDHai.Size = new System.Drawing.Size(75, 23);
-            this.btn_sua_LDHai.TabIndex = 13;
-            this.btn_sua_LDHai.Text = "Sửa";
-            this.btn_sua_LDHai.UseVisualStyleBackColor = true;
-            this.btn_sua_LDHai.Click += new System.EventHandler(this.btn_sua_LDHai_Click);
-            // 
-            // btn_xoa_LDHai
-            // 
-            this.btn_xoa_LDHai.Location = new System.Drawing.Point(435, 278);
-            this.btn_xoa_LDHai.Name = "btn_xoa_LDHai";
-            this.btn_xoa_LDHai.Size = new System.Drawing.Size(75, 23);
-            this.btn_xoa_LDHai.TabIndex = 14;
-            this.btn_xoa_LDHai.Text = "Xoá";
-            this.btn_xoa_LDHai.UseVisualStyleBackColor = true;
-            this.btn_xoa_LDHai.Click += new System.EventHandler(this.btn_xoa_LDHai_Click);
-            // 
-            // btn_nhaplai_LDHai
-            // 
-            this.btn_nhaplai_LDHai.Location = new System.Drawing.Point(594, 278);
-            this.btn_nhaplai_LDHai.Name = "btn_nhaplai_LDHai";
-            this.btn_nhaplai_LDHai.Size = new System.Drawing.Size(75, 23);
-            this.btn_nhaplai_LDHai.TabIndex = 15;
-            this.btn_nhaplai_LDHai.Text = "Nhập lại";
-            this.btn_nhaplai_LDHai.UseVisualStyleBackColor = true;
-            this.btn_nhaplai_LDHai.Click += new System.EventHandler(this.btn_nhaplai_LDHai_Click);
-            // 
-            // btn_ql_LDHai
-            // 
-            this.btn_ql_LDHai.Location = new System.Drawing.Point(753, 278);
-            this.btn_ql_LDHai.Name = "btn_ql_LDHai";
-            this.btn_ql_LDHai.Size = new System.Drawing.Size(75, 23);
-            this.btn_ql_LDHai.TabIndex = 16;
-            this.btn_ql_LDHai.Text = "Quay lại";
-            this.btn_ql_LDHai.UseVisualStyleBackColor = true;
-            this.btn_ql_LDHai.Click += new System.EventHandler(this.btn_ql_LDHai_Click);
             // 
             // mkh
             // 
@@ -246,10 +162,106 @@
             this.tp.HeaderText = "Thành phố";
             this.tp.Name = "tp";
             // 
+            // txt_mkh_LDHai
+            // 
+            this.txt_mkh_LDHai.Location = new System.Drawing.Point(202, 112);
+            this.txt_mkh_LDHai.Name = "txt_mkh_LDHai";
+            this.txt_mkh_LDHai.Size = new System.Drawing.Size(236, 20);
+            this.txt_mkh_LDHai.TabIndex = 1;
+            // 
+            // txt_tkh_LDHai
+            // 
+            this.txt_tkh_LDHai.Location = new System.Drawing.Point(202, 161);
+            this.txt_tkh_LDHai.Name = "txt_tkh_LDHai";
+            this.txt_tkh_LDHai.Size = new System.Drawing.Size(236, 20);
+            this.txt_tkh_LDHai.TabIndex = 2;
+            // 
+            // txt_dc_LDHai
+            // 
+            this.txt_dc_LDHai.Location = new System.Drawing.Point(202, 214);
+            this.txt_dc_LDHai.Name = "txt_dc_LDHai";
+            this.txt_dc_LDHai.Size = new System.Drawing.Size(236, 20);
+            this.txt_dc_LDHai.TabIndex = 3;
+            // 
+            // txt_quan_LDHai
+            // 
+            this.txt_quan_LDHai.Location = new System.Drawing.Point(593, 112);
+            this.txt_quan_LDHai.Name = "txt_quan_LDHai";
+            this.txt_quan_LDHai.Size = new System.Drawing.Size(236, 20);
+            this.txt_quan_LDHai.TabIndex = 4;
+            // 
+            // txt_tp_LDHai
+            // 
+            this.txt_tp_LDHai.Location = new System.Drawing.Point(593, 164);
+            this.txt_tp_LDHai.Name = "txt_tp_LDHai";
+            this.txt_tp_LDHai.Size = new System.Drawing.Size(236, 20);
+            this.txt_tp_LDHai.TabIndex = 5;
+            // 
+            // btn_them_LDHai
+            // 
+            this.btn_them_LDHai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_them_LDHai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_them_LDHai.Location = new System.Drawing.Point(117, 278);
+            this.btn_them_LDHai.Name = "btn_them_LDHai";
+            this.btn_them_LDHai.Size = new System.Drawing.Size(76, 27);
+            this.btn_them_LDHai.TabIndex = 6;
+            this.btn_them_LDHai.Text = "Thêm";
+            this.btn_them_LDHai.UseVisualStyleBackColor = true;
+            this.btn_them_LDHai.Click += new System.EventHandler(this.btn_them_LDHai_Click);
+            // 
+            // btn_sua_LDHai
+            // 
+            this.btn_sua_LDHai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_sua_LDHai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_sua_LDHai.Location = new System.Drawing.Point(276, 278);
+            this.btn_sua_LDHai.Name = "btn_sua_LDHai";
+            this.btn_sua_LDHai.Size = new System.Drawing.Size(76, 27);
+            this.btn_sua_LDHai.TabIndex = 13;
+            this.btn_sua_LDHai.Text = "Sửa";
+            this.btn_sua_LDHai.UseVisualStyleBackColor = true;
+            this.btn_sua_LDHai.Click += new System.EventHandler(this.btn_sua_LDHai_Click);
+            // 
+            // btn_xoa_LDHai
+            // 
+            this.btn_xoa_LDHai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_xoa_LDHai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_xoa_LDHai.Location = new System.Drawing.Point(435, 278);
+            this.btn_xoa_LDHai.Name = "btn_xoa_LDHai";
+            this.btn_xoa_LDHai.Size = new System.Drawing.Size(76, 27);
+            this.btn_xoa_LDHai.TabIndex = 14;
+            this.btn_xoa_LDHai.Text = "Xoá";
+            this.btn_xoa_LDHai.UseVisualStyleBackColor = true;
+            this.btn_xoa_LDHai.Click += new System.EventHandler(this.btn_xoa_LDHai_Click);
+            // 
+            // btn_nhaplai_LDHai
+            // 
+            this.btn_nhaplai_LDHai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_nhaplai_LDHai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_nhaplai_LDHai.Location = new System.Drawing.Point(594, 278);
+            this.btn_nhaplai_LDHai.Name = "btn_nhaplai_LDHai";
+            this.btn_nhaplai_LDHai.Size = new System.Drawing.Size(76, 27);
+            this.btn_nhaplai_LDHai.TabIndex = 15;
+            this.btn_nhaplai_LDHai.Text = "Nhập lại";
+            this.btn_nhaplai_LDHai.UseVisualStyleBackColor = true;
+            this.btn_nhaplai_LDHai.Click += new System.EventHandler(this.btn_nhaplai_LDHai_Click);
+            // 
+            // btn_ql_LDHai
+            // 
+            this.btn_ql_LDHai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ql_LDHai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ql_LDHai.Location = new System.Drawing.Point(753, 278);
+            this.btn_ql_LDHai.Name = "btn_ql_LDHai";
+            this.btn_ql_LDHai.Size = new System.Drawing.Size(76, 27);
+            this.btn_ql_LDHai.TabIndex = 16;
+            this.btn_ql_LDHai.Text = "Quay lại";
+            this.btn_ql_LDHai.UseVisualStyleBackColor = true;
+            this.btn_ql_LDHai.Click += new System.EventHandler(this.btn_ql_LDHai_Click);
+            // 
             // frm_qlkh_LDHai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(901, 536);
             this.Controls.Add(this.btn_ql_LDHai);
             this.Controls.Add(this.btn_nhaplai_LDHai);

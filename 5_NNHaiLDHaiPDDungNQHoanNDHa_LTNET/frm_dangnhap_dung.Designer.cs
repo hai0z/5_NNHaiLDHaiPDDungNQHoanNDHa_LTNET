@@ -64,7 +64,7 @@
             this.btn_dn_dung.Location = new System.Drawing.Point(289, 271);
             this.btn_dn_dung.Name = "btn_dn_dung";
             this.btn_dn_dung.Size = new System.Drawing.Size(75, 23);
-            this.btn_dn_dung.TabIndex = 2;
+            this.btn_dn_dung.TabIndex = 3;
             this.btn_dn_dung.Text = "Đăng nhập";
             this.btn_dn_dung.UseVisualStyleBackColor = true;
             this.btn_dn_dung.Click += new System.EventHandler(this.btn_dn_dung_Click);
@@ -76,7 +76,7 @@
             this.btn_exit_dung.Location = new System.Drawing.Point(464, 271);
             this.btn_exit_dung.Name = "btn_exit_dung";
             this.btn_exit_dung.Size = new System.Drawing.Size(75, 23);
-            this.btn_exit_dung.TabIndex = 3;
+            this.btn_exit_dung.TabIndex = 4;
             this.btn_exit_dung.Text = "Thoát";
             this.btn_exit_dung.UseVisualStyleBackColor = true;
             this.btn_exit_dung.Click += new System.EventHandler(this.btn_exit_dung_Click);
@@ -84,19 +84,17 @@
             // txt_mnv_dung
             // 
             this.txt_mnv_dung.Location = new System.Drawing.Point(289, 130);
-            this.txt_mnv_dung.Multiline = true;
             this.txt_mnv_dung.Name = "txt_mnv_dung";
-            this.txt_mnv_dung.Size = new System.Drawing.Size(250, 25);
-            this.txt_mnv_dung.TabIndex = 4;
+            this.txt_mnv_dung.Size = new System.Drawing.Size(250, 20);
+            this.txt_mnv_dung.TabIndex = 1;
             // 
             // txt_pass_dung
             // 
             this.txt_pass_dung.Location = new System.Drawing.Point(289, 196);
-            this.txt_pass_dung.Multiline = true;
             this.txt_pass_dung.Name = "txt_pass_dung";
             this.txt_pass_dung.PasswordChar = '*';
-            this.txt_pass_dung.Size = new System.Drawing.Size(250, 25);
-            this.txt_pass_dung.TabIndex = 5;
+            this.txt_pass_dung.Size = new System.Drawing.Size(250, 20);
+            this.txt_pass_dung.TabIndex = 2;
             // 
             // label1
             // 
@@ -124,6 +122,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lb_error_dung);
             this.Controls.Add(this.label1);

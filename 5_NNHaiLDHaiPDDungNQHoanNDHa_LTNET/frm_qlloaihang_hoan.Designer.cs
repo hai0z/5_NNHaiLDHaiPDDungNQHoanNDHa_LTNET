@@ -38,9 +38,9 @@
             this.btn_sua_hoan = new System.Windows.Forms.Button();
             this.btn_nhaplai_hoan = new System.Windows.Forms.Button();
             this.dgv_loaihang_hoan = new System.Windows.Forms.DataGridView();
-            this.btn_quaylai_hoan = new System.Windows.Forms.Button();
             this.mlh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenloai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_quaylai_hoan = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_loaihang_hoan)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,26 +58,28 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(104, 92);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.Size = new System.Drawing.Size(55, 16);
             this.label2.TabIndex = 0;
             this.label2.Text = "Mã Loại";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(104, 136);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 13);
+            this.label3.Size = new System.Drawing.Size(60, 16);
             this.label3.TabIndex = 0;
             this.label3.Text = "Tên Loại";
             // 
             // txt_mahang_hoan
             // 
-            this.txt_mahang_hoan.Location = new System.Drawing.Point(166, 92);
+            this.txt_mahang_hoan.Location = new System.Drawing.Point(177, 92);
             this.txt_mahang_hoan.Margin = new System.Windows.Forms.Padding(2);
             this.txt_mahang_hoan.Name = "txt_mahang_hoan";
             this.txt_mahang_hoan.Size = new System.Drawing.Size(355, 20);
@@ -85,29 +87,33 @@
             // 
             // txt_tenhang_hoan
             // 
-            this.txt_tenhang_hoan.Location = new System.Drawing.Point(166, 136);
+            this.txt_tenhang_hoan.Location = new System.Drawing.Point(177, 136);
             this.txt_tenhang_hoan.Margin = new System.Windows.Forms.Padding(2);
             this.txt_tenhang_hoan.Name = "txt_tenhang_hoan";
             this.txt_tenhang_hoan.Size = new System.Drawing.Size(355, 20);
-            this.txt_tenhang_hoan.TabIndex = 1;
+            this.txt_tenhang_hoan.TabIndex = 2;
             // 
             // btn_them_hoan
             // 
-            this.btn_them_hoan.Location = new System.Drawing.Point(123, 196);
+            this.btn_them_hoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_them_hoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_them_hoan.Location = new System.Drawing.Point(102, 189);
             this.btn_them_hoan.Margin = new System.Windows.Forms.Padding(2);
             this.btn_them_hoan.Name = "btn_them_hoan";
-            this.btn_them_hoan.Size = new System.Drawing.Size(65, 23);
-            this.btn_them_hoan.TabIndex = 2;
+            this.btn_them_hoan.Size = new System.Drawing.Size(72, 27);
+            this.btn_them_hoan.TabIndex = 3;
             this.btn_them_hoan.Text = "Thêm";
             this.btn_them_hoan.UseVisualStyleBackColor = true;
             this.btn_them_hoan.Click += new System.EventHandler(this.btn_them_hoan_Click);
             // 
             // btn_xoa_hoan
             // 
-            this.btn_xoa_hoan.Location = new System.Drawing.Point(345, 196);
+            this.btn_xoa_hoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_xoa_hoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_xoa_hoan.Location = new System.Drawing.Point(324, 189);
             this.btn_xoa_hoan.Margin = new System.Windows.Forms.Padding(2);
             this.btn_xoa_hoan.Name = "btn_xoa_hoan";
-            this.btn_xoa_hoan.Size = new System.Drawing.Size(65, 23);
+            this.btn_xoa_hoan.Size = new System.Drawing.Size(72, 27);
             this.btn_xoa_hoan.TabIndex = 2;
             this.btn_xoa_hoan.Text = "Xoá";
             this.btn_xoa_hoan.UseVisualStyleBackColor = true;
@@ -115,10 +121,12 @@
             // 
             // btn_sua_hoan
             // 
-            this.btn_sua_hoan.Location = new System.Drawing.Point(234, 196);
+            this.btn_sua_hoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_sua_hoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_sua_hoan.Location = new System.Drawing.Point(213, 189);
             this.btn_sua_hoan.Margin = new System.Windows.Forms.Padding(2);
             this.btn_sua_hoan.Name = "btn_sua_hoan";
-            this.btn_sua_hoan.Size = new System.Drawing.Size(65, 23);
+            this.btn_sua_hoan.Size = new System.Drawing.Size(72, 27);
             this.btn_sua_hoan.TabIndex = 2;
             this.btn_sua_hoan.Text = "Sửa";
             this.btn_sua_hoan.UseVisualStyleBackColor = true;
@@ -126,10 +134,12 @@
             // 
             // btn_nhaplai_hoan
             // 
-            this.btn_nhaplai_hoan.Location = new System.Drawing.Point(456, 196);
+            this.btn_nhaplai_hoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_nhaplai_hoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_nhaplai_hoan.Location = new System.Drawing.Point(435, 189);
             this.btn_nhaplai_hoan.Margin = new System.Windows.Forms.Padding(2);
             this.btn_nhaplai_hoan.Name = "btn_nhaplai_hoan";
-            this.btn_nhaplai_hoan.Size = new System.Drawing.Size(65, 23);
+            this.btn_nhaplai_hoan.Size = new System.Drawing.Size(72, 27);
             this.btn_nhaplai_hoan.TabIndex = 2;
             this.btn_nhaplai_hoan.Text = "Nhập Lại";
             this.btn_nhaplai_hoan.UseVisualStyleBackColor = true;
@@ -140,7 +150,7 @@
             this.dgv_loaihang_hoan.AllowUserToAddRows = false;
             this.dgv_loaihang_hoan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_loaihang_hoan.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgv_loaihang_hoan.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            this.dgv_loaihang_hoan.BackgroundColor = System.Drawing.Color.White;
             this.dgv_loaihang_hoan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_loaihang_hoan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.mlh,
@@ -155,17 +165,6 @@
             this.dgv_loaihang_hoan.TabIndex = 3;
             this.dgv_loaihang_hoan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_loaihang_hoan_CellClick);
             // 
-            // btn_quaylai_hoan
-            // 
-            this.btn_quaylai_hoan.Location = new System.Drawing.Point(567, 196);
-            this.btn_quaylai_hoan.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_quaylai_hoan.Name = "btn_quaylai_hoan";
-            this.btn_quaylai_hoan.Size = new System.Drawing.Size(65, 23);
-            this.btn_quaylai_hoan.TabIndex = 2;
-            this.btn_quaylai_hoan.Text = "Quay Lại";
-            this.btn_quaylai_hoan.UseVisualStyleBackColor = true;
-            this.btn_quaylai_hoan.Click += new System.EventHandler(this.btn_quaylai_hoan_Click);
-            // 
             // mlh
             // 
             this.mlh.DataPropertyName = "Maloai";
@@ -178,10 +177,24 @@
             this.tenloai.HeaderText = "Tên loại hàng";
             this.tenloai.Name = "tenloai";
             // 
+            // btn_quaylai_hoan
+            // 
+            this.btn_quaylai_hoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_quaylai_hoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_quaylai_hoan.Location = new System.Drawing.Point(546, 189);
+            this.btn_quaylai_hoan.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_quaylai_hoan.Name = "btn_quaylai_hoan";
+            this.btn_quaylai_hoan.Size = new System.Drawing.Size(72, 27);
+            this.btn_quaylai_hoan.TabIndex = 2;
+            this.btn_quaylai_hoan.Text = "Quay Lại";
+            this.btn_quaylai_hoan.UseVisualStyleBackColor = true;
+            this.btn_quaylai_hoan.Click += new System.EventHandler(this.btn_quaylai_hoan_Click);
+            // 
             // frm_qlloaihang_hoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(717, 442);
             this.Controls.Add(this.dgv_loaihang_hoan);
             this.Controls.Add(this.btn_sua_hoan);

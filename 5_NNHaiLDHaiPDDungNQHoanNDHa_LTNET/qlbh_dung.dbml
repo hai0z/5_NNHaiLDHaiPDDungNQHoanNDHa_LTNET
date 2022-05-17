@@ -28,7 +28,7 @@
       <Column Name="DVT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="Dongia" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Association Name="Hanghoa_CT_Hoadon" Member="CT_Hoadons" ThisKey="Mahang" OtherKey="Mahang" Type="CT_Hoadon" />
-      <Association Name="Loaihang_Hanghoa" Member="Loaihang1" ThisKey="Loaihang" OtherKey="Maloai" Type="Loaihang" IsForeignKey="true" />
+      <Association Name="Loaihang_Hanghoa" Member="Loaihang1" ThisKey="Loaihang" OtherKey="Maloai" Type="Loaihang" IsForeignKey="true" DeleteRule="SET NULL" />
     </Type>
   </Table>
   <Table Name="dbo.Hoadon" Member="Hoadons">

@@ -89,6 +89,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.White;
             this.tabPage1.Controls.Add(this.btn_quaylai_LDHai);
             this.tabPage1.Controls.Add(this.txt_tk_LDHai);
             this.tabPage1.Controls.Add(this.label5);
@@ -107,13 +108,14 @@
             this.tabPage1.Size = new System.Drawing.Size(1112, 555);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Danh sách sản phẩm";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // btn_quaylai_LDHai
             // 
+            this.btn_quaylai_LDHai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_quaylai_LDHai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_quaylai_LDHai.Location = new System.Drawing.Point(656, 419);
             this.btn_quaylai_LDHai.Name = "btn_quaylai_LDHai";
-            this.btn_quaylai_LDHai.Size = new System.Drawing.Size(75, 23);
+            this.btn_quaylai_LDHai.Size = new System.Drawing.Size(75, 27);
             this.btn_quaylai_LDHai.TabIndex = 11;
             this.btn_quaylai_LDHai.Text = "Quay lại";
             this.btn_quaylai_LDHai.UseVisualStyleBackColor = true;
@@ -148,59 +150,67 @@
             // 
             // txt_sl_LDHai
             // 
-            this.txt_sl_LDHai.Location = new System.Drawing.Point(117, 462);
+            this.txt_sl_LDHai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_sl_LDHai.Location = new System.Drawing.Point(131, 465);
             this.txt_sl_LDHai.Name = "txt_sl_LDHai";
-            this.txt_sl_LDHai.Size = new System.Drawing.Size(192, 20);
+            this.txt_sl_LDHai.Size = new System.Drawing.Size(192, 22);
             this.txt_sl_LDHai.TabIndex = 7;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(27, 465);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 13);
+            this.label3.Size = new System.Drawing.Size(60, 16);
             this.label3.TabIndex = 6;
             this.label3.Text = "Số lượng";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(27, 424);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 13);
+            this.label2.Size = new System.Drawing.Size(93, 16);
             this.label2.TabIndex = 5;
             this.label2.Text = "Tên sản phẩm";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(27, 386);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 13);
+            this.label1.Size = new System.Drawing.Size(88, 16);
             this.label1.TabIndex = 4;
             this.label1.Text = "Mã sản phẩm";
             // 
             // txt_tsp_LDHai
             // 
             this.txt_tsp_LDHai.Enabled = false;
-            this.txt_tsp_LDHai.Location = new System.Drawing.Point(117, 421);
+            this.txt_tsp_LDHai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tsp_LDHai.Location = new System.Drawing.Point(131, 424);
             this.txt_tsp_LDHai.Name = "txt_tsp_LDHai";
-            this.txt_tsp_LDHai.Size = new System.Drawing.Size(192, 20);
+            this.txt_tsp_LDHai.Size = new System.Drawing.Size(192, 22);
             this.txt_tsp_LDHai.TabIndex = 3;
             // 
             // txt_msp_LDHai
             // 
             this.txt_msp_LDHai.Enabled = false;
-            this.txt_msp_LDHai.Location = new System.Drawing.Point(117, 383);
+            this.txt_msp_LDHai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_msp_LDHai.Location = new System.Drawing.Point(131, 386);
             this.txt_msp_LDHai.Name = "txt_msp_LDHai";
-            this.txt_msp_LDHai.Size = new System.Drawing.Size(192, 20);
+            this.txt_msp_LDHai.Size = new System.Drawing.Size(192, 22);
             this.txt_msp_LDHai.TabIndex = 2;
             // 
             // btn_them_LDHai
             // 
+            this.btn_them_LDHai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_them_LDHai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_them_LDHai.Location = new System.Drawing.Point(473, 419);
             this.btn_them_LDHai.Name = "btn_them_LDHai";
-            this.btn_them_LDHai.Size = new System.Drawing.Size(75, 23);
+            this.btn_them_LDHai.Size = new System.Drawing.Size(75, 27);
             this.btn_them_LDHai.TabIndex = 1;
             this.btn_them_LDHai.Text = "Thêm";
             this.btn_them_LDHai.UseVisualStyleBackColor = true;
@@ -209,12 +219,14 @@
             // dgv_muahang_LDHai
             // 
             this.dgv_muahang_LDHai.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_muahang_LDHai.BackgroundColor = System.Drawing.Color.White;
             this.dgv_muahang_LDHai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_muahang_LDHai.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.mahang,
             this.tenhang,
             this.dvt,
             this.soluong});
+            this.dgv_muahang_LDHai.GridColor = System.Drawing.SystemColors.Control;
             this.dgv_muahang_LDHai.Location = new System.Drawing.Point(6, 120);
             this.dgv_muahang_LDHai.Name = "dgv_muahang_LDHai";
             this.dgv_muahang_LDHai.Size = new System.Drawing.Size(1098, 231);
@@ -247,6 +259,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.White;
             this.tabPage2.Controls.Add(this.txt_ttl_LDHai);
             this.tabPage2.Controls.Add(this.txt_tkd_LDHai);
             this.tabPage2.Controls.Add(this.txt_tt_LDHai);
@@ -267,7 +280,6 @@
             this.tabPage2.Size = new System.Drawing.Size(1112, 555);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Giỏ hàng";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // txt_ttl_LDHai
             // 
@@ -286,6 +298,7 @@
             // 
             // txt_tt_LDHai
             // 
+            this.txt_tt_LDHai.Enabled = false;
             this.txt_tt_LDHai.Location = new System.Drawing.Point(642, 96);
             this.txt_tt_LDHai.Name = "txt_tt_LDHai";
             this.txt_tt_LDHai.ReadOnly = true;
@@ -309,6 +322,8 @@
             // 
             // btn_xoa_LDHai
             // 
+            this.btn_xoa_LDHai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_xoa_LDHai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_xoa_LDHai.Location = new System.Drawing.Point(590, 264);
             this.btn_xoa_LDHai.Name = "btn_xoa_LDHai";
             this.btn_xoa_LDHai.Size = new System.Drawing.Size(148, 33);
@@ -319,6 +334,8 @@
             // 
             // btn_lhd_LDHai
             // 
+            this.btn_lhd_LDHai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_lhd_LDHai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_lhd_LDHai.Location = new System.Drawing.Point(372, 264);
             this.btn_lhd_LDHai.Name = "btn_lhd_LDHai";
             this.btn_lhd_LDHai.Size = new System.Drawing.Size(148, 33);
@@ -375,6 +392,7 @@
             // dgv_giohang_LDHai
             // 
             this.dgv_giohang_LDHai.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_giohang_LDHai.BackgroundColor = System.Drawing.Color.White;
             this.dgv_giohang_LDHai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_giohang_LDHai.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.mh,
